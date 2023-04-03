@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
   const sessionUser = useSelector(state => state.session.user);
@@ -17,18 +18,20 @@ function Navigation() {
     sessionLinks = (
       <>
         <LoginFormModal />
-        <NavLink to="/signup">Sign Up</NavLink>
+        {/* <NavLink to="/signup">Sign Up</NavLink> */}
       </>
     );
   }
 
   return (
     <ul>
-      <li>
+      <li className='navBar'>
         <button>Buy</button>
         <button>Sell</button>
         <button>Home Loans</button>
-        <NavLink exact to="/">Home</NavLink>
+        <img className="icon" src={require('././assets/findMiLogo.png')}/>
+        {/* <image src="./assets/logo-transparent-png.png" alt="FindMiLogo"></image> */}
+        {/* <NavLink exact to="/">Home</NavLink> */}
         <button>Agent Finder</button>
         <button>Help</button>
         {sessionLinks}
