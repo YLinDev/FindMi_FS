@@ -1,0 +1,1 @@
+postgres://findmi_user:n8U6zXC2Rbc72bwqMFmRmph8nseikxtw@dpg-cglhj902qv24jlv6vgm0-a/findmi
