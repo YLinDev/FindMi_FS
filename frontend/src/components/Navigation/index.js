@@ -29,7 +29,7 @@ function Navigation() {
         <button>Buy</button>
         <button>Sell</button>
         <button>Home Loans</button>
-        <img className="icon" src={require('././assets/findMiLogo.png')}/>
+        <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')}/></Link>
         {/* <image src="./assets/logo-transparent-png.png" alt="FindMiLogo"></image> */}
         {/* <NavLink exact to="/">Home</NavLink> */}
         <button>Agent Finder</button>

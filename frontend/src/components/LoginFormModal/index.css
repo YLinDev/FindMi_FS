@@ -8,6 +8,29 @@
 }
 
 .formTop {
-    width: 300px;
+    width: 320px;
     height: 80px;
+    padding: 10px; 
 }
+
+.topButtons {
+    padding: 10px;
+    display: inline;
+    border: none;
+    background: none;
+    font-size: 15px;
+    color: gray;
+}
+
+.formTopButtons {
+    border-bottom: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+}
+
+.errors {
+    font-size: 10px;
+}
+
+
+

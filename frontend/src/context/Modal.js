@@ -31,7 +31,7 @@ export function Modal({ onClose, children }) {
             <div id="modal-background" onClick={onClose} />
                 <div id="modal-content">
                     <button style={{ color: "gray", fontSize: "20px" }} className="closeButton" onClick={onClose}>
-                        <i className="fa-regular fa-xmark fa-beat-fade"></i>
+                        <i className="fa-solid fa-xmark fa-fade"></i>
                     </button>
                     {children}
                 </div>

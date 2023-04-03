@@ -26,8 +26,11 @@ function LoginFormModal() {
         <Modal onClose={() => setShowModal(false)}>
           <div className='formTop'>
             <h2 className='formHeader'>Welcome to FindMi</h2>
-            <button onClick={() => setShowLogin(true)}>Sign In</button>
-            <button onClick={() => setShowLogin(false)}>Sign Up</button>
+            <br/>
+            <div className='formTopButtons'>
+              <button className="topButtons" onClick={() => setShowLogin(true)}>Sign In</button>
+              <button className="topButtons" onClick={() => setShowLogin(false)}>New Account</button>
+            </div>
           </div>
             {renderForm}
         </Modal>

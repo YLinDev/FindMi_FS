@@ -58,7 +58,7 @@ function LoginForm() {
                 </label>
                 <button className="lFormButton" type="submit">Sign In</button>
                 <input className="lFormButton" type="submit" value="Demo User"/>
-                <ul>
+                <ul className='errors'>
                     {errors.map(error =><li key={error}>{error}</li>)}
                 </ul>
             </form>

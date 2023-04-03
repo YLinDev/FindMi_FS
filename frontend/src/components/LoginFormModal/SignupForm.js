@@ -72,7 +72,7 @@ function SignupFormPage() {
                     />
             </label>
             <button className="sFormButton" type="submit">Sign Up</button>
-            <ul>
+            <ul className='errors'>
                 {errors.map(error => <li key={error}>{error}</li>)}
             </ul>
         </form>

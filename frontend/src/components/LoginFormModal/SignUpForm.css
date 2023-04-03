@@ -36,9 +36,7 @@
     width: auto;
     flex-wrap: wrap;
     align-content: center;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
-    /* font-weight: 700; */
     line-height: 24px;
     font-size: 15px;
     height: 40px;
