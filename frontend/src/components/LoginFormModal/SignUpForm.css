@@ -1,4 +1,4 @@
-.loginForm {
+.signUpForm {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -7,13 +7,13 @@
     height: auto;
 }
 
-.lFormLabel {
+.sFormLabel {
     font-size: 14px;
     font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
     line-height: 24px;
 }
 
-.lFormInput {
+.sFormInput {
     width: 250px;
     height: 20px;
     border-radius: 4px;
@@ -23,7 +23,7 @@
     padding: 9px 16px;
 }
 
-.lFormButton {
+.sFormButton {
     background-color: rgb(0, 106, 255);
     border-color: rgb(0, 106, 255);
     color: rgb(255, 255, 255);

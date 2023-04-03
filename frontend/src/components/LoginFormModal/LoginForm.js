@@ -33,36 +33,35 @@ function LoginForm() {
     }
 
     return (
-        <form className="loginForm"onSubmit={handleSubmit}>
-            <h2 className='formHeader'>Welcome to FindMi</h2>
-            <label className='lFormLabel'>
-                Email
-                <br/>
-                <input
-                    className='lFormInput'
-                    type = "text"
-                    placeholder='Enter Email'
-                    value = {email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    />
-            </label>
-            <label className='lFormLabel'>
-                Password
-                <br/>
-                <input 
-                    className='lFormInput'
-                    type = "password"
-                    placeholder='Enter Password'
-                    value = {password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    />
-            </label>
-            <button className="lFormButton" type="submit">Sign In</button>
-            <input className="lFormButton" type="submit" value="Demo User"/>
-            <ul>
-                {errors.map(error =><li key={error}>{error}</li>)}
-            </ul>
-        </form>
+            <form className="loginForm"onSubmit={handleSubmit}>
+                <label className='lFormLabel'>
+                    Email
+                    <br/>
+                    <input
+                        className='lFormInput'
+                        type = "text"
+                        placeholder='Enter email'
+                        value = {email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        />
+                </label>
+                <label className='lFormLabel'>
+                    Password
+                    <br/>
+                    <input 
+                        className='lFormInput'
+                        type = "password"
+                        placeholder='Enter password'
+                        value = {password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        />
+                </label>
+                <button className="lFormButton" type="submit">Sign In</button>
+                <input className="lFormButton" type="submit" value="Demo User"/>
+                <ul>
+                    {errors.map(error =><li key={error}>{error}</li>)}
+                </ul>
+            </form>
     );
 };
 
