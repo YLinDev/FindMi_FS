@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: FindMi_production
-  username: FindMi
+  email: FindMi
   password: <%= ENV["FINDMI_DATABASE_PASSWORD"] %>

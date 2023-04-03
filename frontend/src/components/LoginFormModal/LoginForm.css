@@ -1,0 +1,57 @@
+.loginForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+
+.lFormLabel {
+    font-size: 14px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    line-height: 24px;
+}
+
+.lFormInput {
+    width: 250px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: rgb(246, 246, 250);
+    border: 1px solid rgb(209, 209, 213);
+    caret-color: rgb(0, 106, 255);
+    padding: 9px 16px;
+}
+
+.formHeader {
+    font-family: 'serif';
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    font-weight: none;
+    justify-content: center;
+    margin: 0px 0px 8px;
+    font-family: "Ivar Headline", "Ivar Headline Subset", "Adjusted Times", "Adjusted Times New Roman", "Times New Roman", serif;
+}
+
+.lFormButton {
+    background-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: auto;
+    flex-wrap: wrap;
+    align-content: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    /* font-weight: 700; */
+    line-height: 24px;
+    font-size: 15px;
+    height: 40px;
+    position: relative;
+}

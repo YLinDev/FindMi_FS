@@ -4,25 +4,29 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import { ModalProvider } from './context/Modal';
 import configureStore from './store';
 import csrfFetch, {restoreCSRF} from './store/csrf';
-
+import * as sessionActions from './store/session';
 
 const store = configureStore(); 
 
 if (process.env.NODE_ENV !== 'production'){
   window.store = store; 
   window.csrfFetch = csrfFetch;
+  window.sessionActions = sessionActions;
 }
 
 function Root() {
-  return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Provider>
-  );
+    return (
+      <ModalProvider>
+        <Provider store={store}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </Provider>
+      </ModalProvider>
+    );
 };
 
 const renderApplication = () => {
