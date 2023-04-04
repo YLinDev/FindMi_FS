@@ -10,6 +10,7 @@ function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState([]);
+    const [emailBorder, setEmailBorder] = useState({boxShadow: 'none'})
 
     // if (sessionUser) return <Redirect to="/" />; 
 

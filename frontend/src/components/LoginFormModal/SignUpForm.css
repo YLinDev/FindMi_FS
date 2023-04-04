@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     width: auto;
     height: auto;
-    gap: 10px;
+    gap: 20px;
 }
 
 .sFormLabel {
@@ -14,8 +14,9 @@
     line-height: 24px;
 }
 
+
 .sFormInput {
-    width: 250px;
+    width: 266px;
     height: 20px;
     border-radius: 4px;
     background-color: rgb(246, 246, 250);

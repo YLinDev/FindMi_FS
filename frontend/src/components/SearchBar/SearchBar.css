@@ -1,0 +1,40 @@
+.searchDiv {
+    background-image: url('./assets/splashImage.jpeg');
+    background-size: cover;
+    height: 500px; 
+    background-position: 0px -200px;
+    display: flex;
+    gap: 50px; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700px;
+    text-align: center;
+    line-height: 40px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.searchBar {
+    display: flex;
+    box-shadow: 0 0 18px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.searchInput {
+    width: 40%;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: text;
+    background-color: rgb(246, 246, 250);
+    height: auto;
+    padding-left: 24px;
+}
+
+.searchButton {
+    background-color: rgb(246, 246, 250);
+}

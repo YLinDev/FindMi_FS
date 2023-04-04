@@ -17,18 +17,11 @@ function LoginFormModal() {
   let renderForm;
   let loginBorder;
   let signUpBorder;
-  let sbc;
-  let sbb;
-  let lbc;
-  let lbb;
 
   if (showLogin) {
     renderForm = (
       <LoginForm />
     );
-    // lbc = "rgb(0, 106, 255)"
-    // lbb = "solid"
-    // sbb = 'none'
     loginBorder = {
       borderBottom: "3px solid rgb(0, 106, 255)"
     };
@@ -39,9 +32,6 @@ function LoginFormModal() {
     renderForm = (
       <SignupFormPage />
     );
-    // sbc = "3px solid rgb(0, 106, 255)"
-    // sbb = "solid"
-    // lbb = 'none'
     signUpBorder = {
       borderBottom: "3px solid rgb(0, 106, 255)"
     };
