@@ -35,10 +35,8 @@
     flex-wrap: wrap;
     height: 20px; 
     width: 300px;
-    /* align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    color: red; 
+    text-align: center;
 }
 
 
