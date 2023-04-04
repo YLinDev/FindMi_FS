@@ -2,36 +2,53 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
+    font-size: 20px;
 }
 
 li {
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
 }
 
-a {
-    text-decoration: none;
-    font-size: 45px;
-}
-
-.profile-dropdown {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: center;
+li button {
+    display: inline-flex;
     align-items: center;
 }
 
-.profile-dropdown button {
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.profile-dropdown {
+    width: 300px;
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate(-20px, 100px);
+    display: flex;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
+    flex-direction: column;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+a {
+    font-size: 18px;
+}
+
+.profile-dropdown > ul, button{
+    display: flex;
+    padding: 20px;
+
+}
+
+.profile-dropdown-bottom {
+    border-bottom: solid;
+    border-bottom-color: gray;
+    border-bottom-width: 1px;
+}
+
+.navButtons:hover {
+    color: blue;
 }
 
 .icon {
@@ -45,4 +62,5 @@ a {
     height: 70px; 
     display: flex;
     align-content: center;
+    padding: 15px;
 }

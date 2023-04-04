@@ -26,15 +26,17 @@ function Navigation() {
   return (
     <ul>
       <li className='navBar'>
-        <button>Buy</button>
-        <button>Sell</button>
-        <button>Home Loans</button>
+        <div >
+          <button className='navButtons'>Buy</button>
+          <button className='navButtons'>Sell</button>
+          <button className='navButtons'>Home Loans</button>
+        </div>
         <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')}/></Link>
-        {/* <image src="./assets/logo-transparent-png.png" alt="FindMiLogo"></image> */}
-        {/* <NavLink exact to="/">Home</NavLink> */}
-        <button>Agent Finder</button>
-        <button>Help</button>
-        {sessionLinks}
+        <div >
+          <button className='navButtons'>Agent Finder</button>
+          <button className='navButtons'>Help</button>
+          {sessionLinks}
+        </div>
       </li>
     </ul>
   );

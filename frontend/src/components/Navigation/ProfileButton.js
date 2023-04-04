@@ -27,16 +27,26 @@ function ProfileButton({ user }) {
 
     return (
         <>
-            <button style={{ color: "gray", fontSize: "20px" }} onClick={openMenu}>
-                <i className="fa-solid fa-address-card"></i>
+            <button style={{ color: "gray", fontSize: "20px", width: "58px" }} onClick={openMenu}>
+                <i className="fa-solid fa-user"></i>
             </button>
             {showMenu && (
-                <ul className="profile-dropdown">
-                    <li>Email: {user.email}</li>
-                    <li>
+                <section className="profile-dropdown">
+                    <ul>
+                        <a>Saved homes</a>
+                    </ul>
+                    <ul>
+                        <a>Saved searches</a>
+                    </ul>
+                    <ul>
+                        <a>Your home</a>
+                    </ul>
+                    <ul>
+                        <a>Account settings</a>
+                    </ul>
+                    <div className="profile-dropdown-bottom"/>
                     <button onClick={logout}>Log Out</button>
-                    </li>
-                </ul>
+                </section>
             )}
         </>
     );

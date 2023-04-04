@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     width: auto;
     height: auto;
+    gap: 10px;
 }
 
 .lFormLabel {

@@ -9,7 +9,6 @@
 
 .formTop {
     width: 320px;
-    height: 80px;
     padding: 10px; 
 }
 
@@ -20,6 +19,8 @@
     background: none;
     font-size: 15px;
     color: gray;
+    /* border-bottom: solid;
+    border-color: rgb(0, 106, 255); */
 }
 
 .formTopButtons {
@@ -29,7 +30,15 @@
 }
 
 .errors {
-    font-size: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px; 
+    width: 250px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 

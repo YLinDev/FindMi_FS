@@ -13,6 +13,11 @@ function LoginForm() {
 
     // if (sessionUser) return <Redirect to="/" />; 
 
+    const demoUser = ()=> {
+        setEmail('demo@user.io');
+        setPassword('password')
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors([]);
@@ -33,6 +38,7 @@ function LoginForm() {
     }
 
     return (
+        <>
             <form className="loginForm"onSubmit={handleSubmit}>
                 <label className='lFormLabel'>
                     Email
@@ -57,11 +63,12 @@ function LoginForm() {
                         />
                 </label>
                 <button className="lFormButton" type="submit">Sign In</button>
-                <input className="lFormButton" type="submit" value="Demo User"/>
+                <input className="lFormButton" type="submit" onClick={demoUser} value="Demo User"/>
                 <ul className='errors'>
                     {errors.map(error =><li key={error}>{error}</li>)}
                 </ul>
             </form>
+        </>
     );
 };
 
