@@ -27,3 +27,9 @@ json.listings do
         end
     end
 end
+
+# json.listings({})
+
+# json.listings do 
+#     json.array! @listings
+# end

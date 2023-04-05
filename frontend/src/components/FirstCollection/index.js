@@ -1,16 +1,27 @@
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchListings, getListings } from "../../store/listings";
+import ListingsList from "./ListingsList";
+import './FirstCollection.css';
 
+function FirstCollection() {
+    const dispatch = useDispatch();
+    const listings = useSelector(getListings)
 
-function FirstCollection({listings}) {
-
-    
+    useEffect(() => {
+        dispatch(fetchListings())
+    }, [])
 
 
     return (
-        <>
-            <ul>
-
-            </ul>
-        </>
+        <div className="firstCollection">
+            <div className="header">
+                <h2>Trending Homes</h2>
+            </div>
+            <ListingsList 
+                listings={listings}
+            />
+        </div>
     )
 }
 

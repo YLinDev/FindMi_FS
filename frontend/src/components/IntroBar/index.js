@@ -1,3 +1,4 @@
+import React from 'react';
 import './IntroBar.css';
 import { useSelector } from 'react-redux';
 
@@ -17,15 +18,15 @@ function IntroBar() {
                     </div>
                     <div className='introRight'>
                         <button className='introButton' >
-                            <i class="fa-solid fa-house-chimney-window fa-bounce"></i>
+                            <i className="fa-solid fa-house-chimney-window fa-bounce"></i>
                             <p>Buy</p>
                         </button>
                         <button className='introButton' >
-                            <i class="fa-solid fa-sign-hanging fa-bounce"></i>
+                            <i className="fa-solid fa-sign-hanging fa-bounce"></i>
                             <p>Sell</p>
                         </button>
                         <button className='introButton' >
-                            <i class="fa-solid fa-building fa-bounce"></i>
+                            <i className="fa-solid fa-building fa-bounce"></i>
                             <p>Rent</p>
                         </button>
                     </div>

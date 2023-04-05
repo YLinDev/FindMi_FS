@@ -4,6 +4,7 @@ import SignupFormPage from "./components/LoginFormModal";
 import Navigation from "./components/Navigation";
 import SearchBar from "./components/SearchBar";
 import IntroBar from "./components/IntroBar";
+import FirstCollection from "./components/FirstCollection";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <SearchBar />
       <IntroBar />
+      <FirstCollection />
         <Switch>
           <Route>
           </Route>
