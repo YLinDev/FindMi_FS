@@ -30,10 +30,12 @@ function Navigation() {
           <button className='navButtons'>Buy</button>
           <button className='navButtons'>Sell</button>
           <button className='navButtons'>Home Loans</button>
-        </div>
-        <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')}/></Link>
-        <div >
           <button className='navButtons'>Agent Finder</button>
+        </div>
+        <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')} alt=""/></Link>
+        <div >
+          <button className='navButtons'>Manage Rentals</button>
+          <button className='navButtons'>Advertise</button>
           <button className='navButtons'>Help</button>
           {sessionLinks}
         </div>

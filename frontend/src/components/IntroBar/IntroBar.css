@@ -1,0 +1,66 @@
+.introDiv {
+    padding-left: 123px;
+    padding-right: 123px;
+    background: rgb(246, 246, 250);
+    border-radius: 20px;
+    width: 100%;
+    margin: 50px 50px 48px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introOutter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.introRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.introLeft {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+}
+
+.introHeading {
+    font-size: 36px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    padding-bottom: 10px;
+}
+
+.introNote {
+    color: gray;
+    font-family: "Open Sans","Adjusted Arial",Tahoma,Geneva,sans-serif;
+    width: 350px;
+}
+
+.house {
+    position: relative;
+    width: 350px;
+    left: -20px;
+}
+
+.introButton {
+    width: 150px;
+    min-width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 15px;
+    cursor: pointer;
+    text-align-last: center;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
