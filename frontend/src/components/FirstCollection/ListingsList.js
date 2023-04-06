@@ -4,7 +4,7 @@ import ListingItem from "./ListingItem";
 function ListingsList({listings}) {
     console.log(listings)
     return (
-        <ul className="scrollCollection">
+        <ul id="scrollCollection">
             {listings.map((listing) => (
                 <ListingItem
                     listing={listing}
