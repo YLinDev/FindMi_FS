@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.css';
+import './SignInModal.css';
 
 const ModalContext = React.createContext();
 
@@ -22,7 +22,7 @@ export function ModalProvider({ children }) {
     );
 }
 
-export function Modal({ onClose, children }) {
+export function SignInModal({ onClose, children }) {
     const modalNode = useContext(ModalContext);
     if (!modalNode) return null;
 

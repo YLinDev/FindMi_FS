@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal } from '../../context/Modal';
+import { SignInModal } from '../../context/SignInModal/SignInModal';
 import LoginForm from './LoginForm';
 import SignupFormPage from './SignupForm';
 import './index.css';
@@ -44,7 +44,7 @@ function LoginFormModal() {
     <>
       <button className='navButtons' onClick={() => setShowModal(true)}>Sign In</button>
       {showModal && (
-        <Modal onClose={() => setShowModal(false)}>
+        <SignInModal onClose={() => setShowModal(false)}>
           <div className='formTop'>
             <h2 className='formHeader'>Welcome to FindMi</h2>
             <br/>
@@ -54,7 +54,7 @@ function LoginFormModal() {
             </div>
           </div>
             {renderForm}
-        </Modal>
+        </SignInModal>
       )}
     </>
   );

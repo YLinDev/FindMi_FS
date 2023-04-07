@@ -1,0 +1,72 @@
+.showDiv {
+    display: flex;
+    position: absolute;
+    height: 678px;
+    justify-content: center;
+}
+
+.showLeft {
+    width: 45%;
+    height: auto;
+    padding-right: 15px;
+}
+
+.showRight {
+    width: 40%; 
+}
+
+.infoHeader {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.showButtons {
+    display: flex;
+    color: blue; 
+
+}
+
+.logo {
+    width: 30%;
+    height: 20%;
+}
+
+.showPriceInfo {
+    display: flex;
+    gap: 20px;
+    padding: 10px; 
+    text-align: end;
+}
+
+.showPrice {
+    font-size: 40px;
+    font-weight: bolder;
+
+}
+
+.showInfo {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 20px; 
+    padding-bottom: 5px;
+}
+
+.showAddress {
+    font-size: 20px;
+    padding-left: 10px;
+    padding: 5px;
+    color: rgb(42, 42, 51);
+}
+
+.showListingType {
+    padding-left: 10px;
+    display: flex;
+    padding: 10px; 
+    gap: 5px;
+}
+
+.showTourAgent {
+    display: flex;
+    gap: 10px;
+}

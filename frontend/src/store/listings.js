@@ -20,6 +20,7 @@ const removeListing = (listingId) => ({
 });
 
 export const getListing = (listingId) => state => {
+    // console.log(state.listings)
     return state?.listings ? state.listings[listingId] : null; 
 };
 

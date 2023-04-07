@@ -33,4 +33,7 @@ class Listing < ApplicationRecord
     belongs_to :user, 
         foreign_key: :owner_id,
         inverse_of: :listings
+
+    has_many_attached :photos
+
 end
