@@ -6,24 +6,28 @@
 }
 
 .showLeft {
-    width: 45%;
+    width: 50%;
     height: auto;
     padding-right: 15px;
+    background-color: rgb(246, 246, 250);
 }
 
 .showRight {
     width: 40%; 
+    background-color: rgb(246, 246, 250);
+    padding-right: 15px;
 }
 
 .infoHeader {
     display: flex;
     width: 100%;
     border-bottom: 1px solid gray;
+    align-items: center;
 }
 
 .showButtons {
     display: flex;
-    color: blue; 
+    color: rgb(0, 106, 255); 
 
 }
 
@@ -42,7 +46,7 @@
 .showPrice {
     font-size: 40px;
     font-weight: bolder;
-
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 }
 
 .showInfo {
@@ -63,10 +67,64 @@
     padding-left: 10px;
     display: flex;
     padding: 10px; 
-    gap: 5px;
+    gap: 10px;
 }
 
 .showTourAgent {
     display: flex;
     gap: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.showType {
+    color: red; 
+}
+
+.tourButton {
+    width: 60%; 
+    display: flex;
+    background-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.agentButton {
+    border: 2px solid rgb(0, 106, 255);
+    border-radius: 4px;
+    color: rgb(0, 106, 255);
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.showOverview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(42, 42, 51);
+    text-transform:capitalize;
+}
+
+.sOverviewDiv {
+    border-bottom:  1px solid gray;
+}
+
+.sDescription {
+    font-size: 20px;
+    padding: 10px; 
+}
+
+.showDescription {
+    padding: 10px;
+    font-weight: 200;
+}
+
+.sDetails {
+    padding: 10px; 
 }

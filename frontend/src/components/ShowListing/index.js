@@ -1,78 +1,113 @@
-import React, { useState } from "react";
-import { ShowLModal } from "../../context/ShowModal/ShowLModal";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { getListings, getListing } from "../../store/listings";
+import { getListing } from "../../store/listings";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchListings } from "../../store/listings";
+import { fetchListing } from "../../store/listings";
 import { useEffect } from "react";
 import './ShowListing.css';
 
 function ShowListing() {
-    const { listingId } = useParams();
     const dispatch = useDispatch(); 
-    const listing = useSelector(getListing(listingId))
-    console.log(listing)
-    const { price, condo, bedrooms, bathrooms, sqft, address, listing_type } = listing
+    const { listingId } = useParams();
+    const sessionUser = useSelector(state => state.session.user)
+    console.log(sessionUser)
+    
+    
 
     useEffect(() => {
-        dispatch(fetchListings())
-    }, [])
+        dispatch(fetchListing(listingId))
+    }, [dispatch, listingId])
+    
+    const listing = useSelector(getListing(parseInt(listingId)))
+    if (listing) {
+        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description } = listing
+        
+        let houseType;
+        if (condo) {
+            houseType = "Condo"
+        } else {
+            houseType = "Single Family House"
+        }
+        let editButton;
+        if (sessionUser.id === ownerId) {
+            editButton = <button >Edit button if user is owner</button>
+        }
 
-    return (
-        <> 
-            <div className="showDiv">
-                <div className="showLeft">
-                    <img src={require('././assets/stock-image.jpeg')} />
-                </div>
-                <div className="showRight">
-                    <div className="infoHeader">
-                        <img className="logo"src={require('././assets/findMiLogo.png')}/>
-                        <div className="showButtons">
-                            <button>
-                                <i className="fa-regular fa-heart"></i> &nbsp;Save
+        return (
+            <> 
+                <div >
+                    <div className="showDiv">
+                    <div className="showLeft">
+                        <img src={require('././assets/stock-image.jpeg')} alt=""/>
+                    </div>
+                    <div className="showRight">
+                        <div className="infoHeader">
+                            <img className="logo"src={require('././assets/findMiLogo.png')} alt=""/>
+                            <div className="showButtons">
+                                <button>
+                                    <i className="fa-regular fa-heart"></i> &nbsp;Save
+                                </button>
+                                <button>
+                                    <i className="fa-solid fa-share"></i> &nbsp;Share
+                                </button>
+                                <button>
+                                    <i className="fa-regular fa-eye-slash"></i> &nbsp;Hide
+                                </button>
+                                <button>
+                                    <i className="fa-solid fa-caret-down"></i> &nbsp;More
+                                </button>
+                            </div>
+                        </div>
+                        <div className="showPriceInfo">
+                                <div className="showPrice">
+                                    ${price.toLocaleString('en-US')}
+                                </div>
+                                <div className="showInfo">
+                                    {bedrooms} bds |&nbsp;
+                                    {bathrooms} ba |&nbsp;
+                                    {sqft.toLocaleString('en-US')} sqft
+                                </div>
+                        </div>
+                        <div className="showAddress">
+                            {address}
+                        </div>
+                        <div className="showListingType">
+                            <div className="showType">
+                                <i className="fa-solid fa-circle"></i>
+                            </div>
+                            <p>For Sale</p>
+                            <p>FindMiMate : None</p>
+                        </div>
+                        <div className="showTourAgent">
+                            <button className="tourButton">
+                                Request a Tour
+                                <p>as early as tomorrow at 11:00am</p>
                             </button>
-                            <button>
-                                <i className="fa-solid fa-share"></i> &nbsp;Share
-                            </button>
-                            <button>
-                                <i className="fa-regular fa-eye-slash"></i> &nbsp;Hide
-                            </button>
-                            <button>
-                                <i className="fa-solid fa-caret-down"></i> &nbsp;More
-                            </button>
+                            <button className="agentButton">Contact an agent</button>
+                        </div>
+                        <div className="showScroll">
+                            <div className="sOverviewDiv">
+                                <ul className="showOverview">
+                                    <li><i className="fa-regular fa-building"></i> {houseType}</li>
+                                    <li><i className="fa-regular fa-calendar"></i> Built in {yearBuilt}</li>
+                                    <li><i className="fa-regular fa-snowflake"></i> {airCond}</li>
+                                    <li><i className="fa-solid fa-square-parking"></i> {parking}</li>
+                                </ul>
+                            </div>
+                            <div className="showDescription">
+                                <h2 className="sDescription">Description:</h2>
+                                <p className="sDetails">{overview}. {description}</p>
+                            </div>
+                            {editButton}
                         </div>
                     </div>
-                    <div className="showPriceInfo">
-                            <div className="showPrice">
-                                ${price.toLocaleString('en-US')}
-                            </div>
-                            <div className="showInfo">
-                                {bedrooms} bds |&nbsp;
-                                {bathrooms} ba |&nbsp;
-                                {sqft.toLocaleString('en-US')} sqft
-                            </div>
-                    </div>
-                    <div className="showAddress">
-                        {address}
-                    </div>
-                    <div className="showListingType">
-                        <i className="fa-solid fa-circle"></i>
-                        <p>For Sale</p>
-                        <p>FindMiMate : None</p>
-                    </div>
-                    <div className="showTourAgent">
-                        <button >
-                            Request a Tour
-                            <p>as early as tomorrow at 11:00am</p>
-                        </button>
-                        <button >Agent</button>
-                    </div>
-                    <div className="showScroll">
                     </div>
                 </div>
-            </div>
-        </>
-    )
+            </>
+        )
+    } else {
+        return null;
+    }
 }
 
 export default ShowListing; 

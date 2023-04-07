@@ -29,6 +29,7 @@ li button {
     flex-direction: column;
     border-radius: 4px;
     font-size: 18px;
+    z-index: 10;
 }
 
 a {
