@@ -20,7 +20,7 @@ function ShowListing() {
     
     const listing = useSelector(getListing(parseInt(listingId)))
     if (listing) {
-        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description } = listing
+        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl } = listing
         
         let houseType;
         if (condo) {
@@ -33,12 +33,19 @@ function ShowListing() {
             editButton = <button >Edit button if user is owner</button>
         }
 
+        let pictures
+        if (photosUrl && Array.isArray(photosUrl)) {
+            pictures = photosUrl.map((url) => <img src={url}/>)
+        } else {
+            pictures = <img src={require('././assets/stock-image.jpeg')} alt=""/>
+        }
+
         return (
             <> 
                 <div >
                     <div className="showDiv">
                     <div className="showLeft">
-                        <img src={require('././assets/stock-image.jpeg')} alt=""/>
+                        {pictures}
                     </div>
                     <div className="showRight">
                         <div className="infoHeader">

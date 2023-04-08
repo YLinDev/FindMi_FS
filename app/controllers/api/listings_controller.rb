@@ -60,7 +60,8 @@ class Api::ListingsController < ApplicationController
             :overview,
             :views,
             :saves,
-            :owner_id
+            :owner_id,
+            photos: []
         )
     end
 end

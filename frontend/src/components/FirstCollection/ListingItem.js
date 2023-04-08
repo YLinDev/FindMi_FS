@@ -4,7 +4,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import { ShowLModal } from "../../context/ShowModal/ShowLModal";
 
 function ListingItem({listing}) {
-    const { id, price, condo, bedrooms, bathrooms, sqft, address, listing_type } = listing
+    const { id, price, condo, bedrooms, bathrooms, sqft, address, listing_type, photosUrl } = listing
     const [showModal, setShowModal] = useState(false);
     const history = useHistory(); 
 
@@ -14,6 +14,12 @@ function ListingItem({listing}) {
     } else {
         text = "House for sale"
     }
+    let pictures;
+    if (photosUrl && Array.isArray(photosUrl)) {
+        pictures = <img className="cardPic" src={photosUrl[0]}/>
+    } else {
+        pictures = <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
+    }
 
     return (
             <li className="cardDiv" 
@@ -21,7 +27,7 @@ function ListingItem({listing}) {
             >
                     <div className="card"> 
                         <div className="cardTop">
-                            <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
+                            {pictures}
                         </div>
                         <div className="cardBottom">
                             <div className="cardPrice">

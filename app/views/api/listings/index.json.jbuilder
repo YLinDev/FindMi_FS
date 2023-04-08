@@ -24,6 +24,12 @@ json.listings do
             :owner_id,
             :created_at,
             :updated_at
+
+            if listing.photos.attached?
+                json.photos_url listing.photos.map { |photo| photo.url }
+            else
+                json.photos_url '././assets/stock-image.jpeg'
+            end 
         end
     end
 end
@@ -31,5 +37,7 @@ end
 # json.listings({})
 
 # json.listings do 
-#     json.array! @listings
+#     json.array! @listings do |listing|
+#         json.partial! 'api/listings/listing', listing: listing
+#      end
 # end

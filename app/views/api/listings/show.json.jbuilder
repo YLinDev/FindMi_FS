@@ -20,4 +20,18 @@ json.listing do
         :owner_id,
         :created_at,
         :updated_at
+
+    # if @listing.photos.attached?
+    #     @listing.photos.each do |photo|
+    #         json.set! :photos_url, photo.url
+    #     end
+    # else
+    #     json.photos_url "/bench_placeholder.png"
+    # end 
+
+    if @listing.photos.attached?
+        json.photos_url @listing.photos.map { |photo| photo.url }
+    else
+        json.photos_url '././assets/stock-image.jpeg'
+    end 
 end

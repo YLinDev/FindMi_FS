@@ -26,7 +26,7 @@ function ListingForm() {
     
     return(
         <>
-            <h1>Create A Listing</h1>
+            <h1>Create A New Listing</h1>
             <form className="listingForm">
                 <label>
                     Listing for:
