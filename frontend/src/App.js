@@ -15,8 +15,8 @@ function App() {
         <Switch>
           <Route exact path="/">
             <SearchBar />
-            <IntroBar />
             <FirstCollection />
+            <IntroBar />
           </Route>
           <Route path="/home">
             <Home />

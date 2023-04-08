@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './SignInModal.css';
+import './SellFormModal.css';
 
 const ModalContext = React.createContext();
 
@@ -30,6 +31,26 @@ export function SignInModal({ onClose, children }) {
         <div id="modal">
             <div id="modal-background" onClick={onClose} />
                 <div id="modal-content">
+                    <div className='closeButtonDiv'>
+                        <button style={{ color: "gray", fontSize: "20px" }} className="closeButton" onClick={onClose}>
+                            <i className="fa-solid fa-xmark fa-beat" ></i>
+                        </button>
+                    </div>
+                    {children}
+                </div>
+        </div>,
+        modalNode
+    );
+}
+
+export function SellFormModal({ onClose, children }) {
+    const modalNode = useContext(ModalContext);
+    if (!modalNode) return null;
+
+    return ReactDOM.createPortal(
+        <div id="sellModal">
+            <div id="sellModal-background" onClick={onClose} />
+                <div id="sellModal-content">
                     <div className='closeButtonDiv'>
                         <button style={{ color: "gray", fontSize: "20px" }} className="closeButton" onClick={onClose}>
                             <i className="fa-solid fa-xmark fa-beat" ></i>

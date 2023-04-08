@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SignInModal } from '../../context/SignInModal/SignInModal';
+import { SignInModal } from '../../context/SignInModal/Modal';
 import LoginForm from './LoginForm';
 import SignupFormPage from './SignupForm';
 import './index.css';
@@ -9,10 +9,6 @@ import { useDispatch } from 'react-redux';
 function LoginFormModal() {
   const [showModal, setShowModal] = useState(false);
   const [showLogin, setShowLogin] = useState(true);
-
-  // const lFormToggle = () => {
-    
-  // }
 
   let renderForm;
   let loginBorder;

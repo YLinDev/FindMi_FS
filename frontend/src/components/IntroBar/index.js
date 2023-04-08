@@ -4,10 +4,9 @@ import { useSelector } from 'react-redux';
 
 
 function IntroBar() {
-    const sessionUser = useSelector(state => state.session.user);
 
     // let introLinks;
-    if (!sessionUser) {
+
         return (
             <div className='introOutter'>
                 <div className="introDiv">
@@ -33,12 +32,7 @@ function IntroBar() {
                 </div> 
             </div>
         )
-    } else {
-        return (
-            <>
-            </>
-        )
-    }
+
     
 }
 

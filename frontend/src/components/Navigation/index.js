@@ -5,6 +5,7 @@ import ProfileButton from './ProfileButton';
 import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
+import SellButton from './SellButton';
 
 function Navigation() {
   const sessionUser = useSelector(state => state.session.user);
@@ -28,7 +29,7 @@ function Navigation() {
       <li className='navBar'>
         <div >
           <button className='navButtons'>Buy</button>
-          <button className='navButtons'>Sell</button>
+          <SellButton />
           <button className='navButtons'>Home Loans</button>
           <button className='navButtons'>Agent Finder</button>
         </div>

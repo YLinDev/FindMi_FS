@@ -29,7 +29,7 @@ function ShowListing() {
             houseType = "Single Family House"
         }
         let editButton;
-        if (sessionUser.id === ownerId) {
+        if (sessionUser && sessionUser.id === ownerId) {
             editButton = <button >Edit button if user is owner</button>
         }
 
