@@ -18,7 +18,7 @@ function App() {
             <FirstCollection />
             <IntroBar />
           </Route>
-          <Route path="/home">
+          <Route exact path="/home">
             <Home />
           </Route>
           <Route path="/show/:listingId">

@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import ShowListing from "../ShowListing";
-import { NavLink, useHistory } from "react-router-dom";
-import { ShowLModal } from "../../context/ShowModal/ShowLModal";
+import React from "react";
+import { useHistory } from "react-router-dom";
 
 function ListingItem({listing}) {
-    const { id, price, condo, bedrooms, bathrooms, sqft, address, listing_type, photosUrl } = listing
-    const [showModal, setShowModal] = useState(false);
+    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl } = listing
     const history = useHistory(); 
 
     let text;
@@ -16,7 +13,7 @@ function ListingItem({listing}) {
     }
     let pictures;
     if (photosUrl && Array.isArray(photosUrl)) {
-        pictures = <img className="cardPic" src={photosUrl[0]}/>
+        pictures = <img className="cardPic" src={photosUrl[0]} alt=""/>
     } else {
         pictures = <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
     }

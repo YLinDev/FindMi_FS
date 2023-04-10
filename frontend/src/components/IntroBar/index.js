@@ -1,6 +1,7 @@
 import React from 'react';
 import './IntroBar.css';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 function IntroBar() {
@@ -16,15 +17,17 @@ function IntroBar() {
                         <img className="house" src={require('././assets/logo-home.png')} alt=""/>
                     </div>
                     <div className='introRight'>
-                        <button className='introButton' >
-                            <i className="fa-solid fa-house-chimney-window fa-bounce"></i>
-                            <p>Buy</p>
-                        </button>
-                        <button className='introButton' >
+                        <Link to="/home">
+                            <button className='introButton' >
+                                <i className="fa-solid fa-house-chimney-window fa-bounce"></i>
+                                <p>Buy</p>
+                            </button>
+                        </Link>
+                        <button onClick={() => document.getElementById('mySellButton').click()} className='introButton' >
                             <i className="fa-solid fa-sign-hanging fa-bounce"></i>
                             <p>Sell</p>
                         </button>
-                        <button className='introButton' >
+                        <button onClick={() => document.getElementById('myRentButton').click()} className='introButton' >
                             <i className="fa-solid fa-building fa-bounce"></i>
                             <p>Rent</p>
                         </button>

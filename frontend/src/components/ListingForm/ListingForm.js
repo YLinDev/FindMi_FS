@@ -91,8 +91,11 @@ function ListingForm() {
             setYearBuilt(listing.yearBuilt);
             setCreatedAt(listing.createdAt);
             setUpdatedAt(listing.updatedAt);
+            setImageUrls(listing.photosUrl);
         }
     }, [dispatch, listingId])
+
+    console.log(imageUrls)
 
     const handleSubmit = async (e) => {
         e.preventDefault(); 
@@ -109,7 +112,7 @@ function ListingForm() {
             for (let key in listing) {
 				formData.append(`listing[${key}]`, listing[key]);
 			}
-		}
+		} 
         
         setPricePerSquare((price/sqft).toFixed(0));
 
@@ -131,17 +134,18 @@ function ListingForm() {
         formData.append('listing[saves]', saves);
         formData.append('listing[owner_id]', owner_id)
 
-        for (const pair of formData.entries()) {
-            console.log(`${pair[0]}, ${pair[1]}`)
-        }
+        // for (const pair of formData.entries()) {
+        //     console.log(`${pair[0]}, ${pair[1]}`)
+        // }
 
         if (listingId) {
 			dispatch(updateListing(formData, listingId));
+            history.push(`/show/${listingId}`);
 		} else {
-			dispatch(createListing(formData));
+            dispatch(createListing(formData));
+            history.push("/");
 		}
-
-		history.push("/");
+        
     }
 
 

@@ -1,0 +1,102 @@
+/* .firstCollection {
+    margin: 0px 64px;
+    padding: 16px 0px;
+    position: relative;
+    max-width: 1200px;
+}
+
+.header {
+    font-size: 30px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.arrowButtons {
+    display: flex; 
+    font-size: 15px;
+}
+
+#scrollCollection {
+    list-style: none;
+    margin: 0px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 5px; 
+    scroll-padding: 0px 8px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    display: flex; 
+    gap: 16px; 
+}
+
+#scrollCollection::-webkit-scrollbar {display: none;}
+
+.card {
+    display: flex; 
+    padding: 0px;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px 0px;
+}
+
+.cardDiv {
+    display: flex; 
+    padding: 0px;
+    flex: 0 0 345px;
+
+}
+
+.cardPic {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100%; 
+}
+
+.cardBottom{
+    color: rgb(42, 42, 51);
+    padding: 10px; 
+}
+
+.cardPrice {
+    font-size: 20px;
+}
+
+.cardInfo {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.cardAddress {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.cardTop {
+    height: 200px; 
+    width: 340px; 
+} */
+
+.homeCollection{
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+}
+
+#HC_scrollCollection{
+    display: flex; 
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.HC_header {
+    padding: 10px; 
+}
+

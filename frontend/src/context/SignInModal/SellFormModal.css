@@ -36,7 +36,10 @@
     align-content: center;
 }
 
-#sellCloseButtonDiv {
+/* .sellCloseButtonDiv {
     display: flex; 
     flex-direction: row-reverse;
-}
+    width: 200px;
+    height: 200px; 
+    z-index: 100;
+} */

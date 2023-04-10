@@ -6,9 +6,17 @@ import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
 import SellButton from './SellButton';
+import RentButton from './RentButton';
+import { useHistory } from 'react-router-dom';
 
 function Navigation() {
   const sessionUser = useSelector(state => state.session.user);
+  const history = useHistory(); 
+
+  const buyClick = (e) => {
+    e.preventDefault(); 
+    history.push('/home')
+  }
 
   let sessionLinks;
   if (sessionUser) {
@@ -28,14 +36,14 @@ function Navigation() {
     <ul>
       <li className='navBar'>
         <div >
-          <button className='navButtons'>Buy</button>
+          <Link to="/home"><button className='navButtons'>Buy</button></Link>
           <SellButton />
-          <button className='navButtons'>Home Loans</button>
-          <button className='navButtons'>Agent Finder</button>
+          <RentButton />
+          <button className='navButtons'>Manage Rentals</button>
         </div>
         <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')} alt=""/></Link>
         <div >
-          <button className='navButtons'>Manage Rentals</button>
+          <button className='navButtons'>Agent Finder</button>
           <button className='navButtons'>Advertise</button>
           <button className='navButtons'>Help</button>
           {sessionLinks}

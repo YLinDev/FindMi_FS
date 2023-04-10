@@ -49,6 +49,9 @@ export function SellFormModal({ onClose, children }) {
 
     return ReactDOM.createPortal(
         <div id="sellModal">
+            {/* <div className='sellCloseButtonDiv'>
+                <i className="fa-solid fa-square-xmark"></i>
+            </div> */}
             <div id="sellModal-background" onClick={onClose} />
                 <div id="sellModal-content">
                     {children}

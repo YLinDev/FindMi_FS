@@ -1,13 +1,16 @@
-import ShowListing from '../ShowListing';
 import React, {useState} from 'react';
+import ListingMap from '../ListingMap';
+import HomeCollection from '../HomeCollection';
+import './Home.css'
 
 function Home() {
-    const [showModal, setShowModal] = useState(true);
-    
+
+
     return(
-        <>
-            <img className="cardPic" src={require('../FirstCollection/assets/stock-image.jpeg')} alt=""/>
-        </>
+        <div className='homePage'>
+            <ListingMap />
+            <HomeCollection />
+        </div>
     )
 }
 

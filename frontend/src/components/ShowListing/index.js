@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchListing } from "../../store/listings";
 import { useEffect } from "react";
 import EditButton from "./editButton";
+import DeleteButton from "./deleteButton";
 import './ShowListing.css';
 
 function ShowListing() {
@@ -26,9 +27,15 @@ function ShowListing() {
         } else {
             houseType = "Single Family House"
         }
+
         let editButton;
         if (sessionUser && sessionUser.id === ownerId) {
             editButton = <EditButton/>
+        }
+
+        let deleteButton;
+        if (sessionUser && sessionUser.id === ownerId) {
+            deleteButton = <DeleteButton/>
         }
 
         let pictures
@@ -103,7 +110,10 @@ function ShowListing() {
                                 <h2 className="sDescription">Description:</h2>
                                 <p className="sDetails">{overview}. {description}</p>
                             </div>
-                            {editButton}
+                            <div className="edit_delete">
+                                {editButton}
+                                {deleteButton}
+                            </div>
                         </div>
                     </div>
                     </div>

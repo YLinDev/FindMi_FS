@@ -8,14 +8,16 @@
 .showLeft {
     width: 50%;
     height: auto;
-    padding-right: 15px;
     background-color: rgb(246, 246, 250);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .showRight {
     width: 40%; 
     background-color: rgb(246, 246, 250);
     padding-right: 15px;
+
 }
 
 .infoHeader {
@@ -93,7 +95,7 @@
 }
 
 .editListing{
-    width: 92%; 
+    width: 42%; 
     display: flex;
     background-color: rgb(0, 106, 255);
     border-color: rgb(0, 106, 255);
@@ -101,6 +103,22 @@
     flex-direction: column;
     align-items: center;
     border-radius: 4px;
+}
+
+.deleteListing{
+    width: 42%; 
+    display: flex;
+    background-color: rgb(0, 106, 255);
+    border-color: rgb(0, 106, 255);
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.edit_delete{
+    display: flex; 
+    gap: 10px; 
 }
 
 .agentButton {
