@@ -7,4 +7,43 @@ input::-webkit-inner-spin-button {
 .listingForm {
     display: flex;
     flex-direction: column;
+    gap: 2px; 
+}
+
+.LFlabel {
+    font-size: 17px;
+    font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+    line-height: 24px;
+    display: flex; 
+    border: solid 1px rgb(209, 209, 213);
+    border-radius: 4px;
+    justify-content: space-between;
+    gap: 5px; 
+    align-items: center;
+    padding-left: 5px;
+}
+
+#LFradio {
+  display: flex; 
+  justify-content: space-between;
+}
+
+.LFInput {
+  width: 266px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+  caret-color: rgb(0, 106, 255);
+  padding: 9px 16px;
+}
+
+.formHeading {
+  color:  rgb(246, 246, 250);
+  font-size: 36px;
+  font-weight: 700px;
+  text-align: center;
+  line-height: 40px;
+  text-shadow: 2px 2px 8px black;
+
 }

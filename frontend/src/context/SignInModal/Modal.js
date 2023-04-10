@@ -51,11 +51,6 @@ export function SellFormModal({ onClose, children }) {
         <div id="sellModal">
             <div id="sellModal-background" onClick={onClose} />
                 <div id="sellModal-content">
-                    <div className='closeButtonDiv'>
-                        <button style={{ color: "gray", fontSize: "20px" }} className="closeButton" onClick={onClose}>
-                            <i className="fa-solid fa-xmark fa-beat" ></i>
-                        </button>
-                    </div>
                     {children}
                 </div>
         </div>,

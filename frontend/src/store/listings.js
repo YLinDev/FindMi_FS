@@ -29,7 +29,7 @@ export const getListings = state => {
 };
 
 export const fetchListings = () => async (dispatch) => {
-    const res = await fetch('/api/listings')
+    const res = await csrfFetch('/api/listings')
     if (res.ok) {
         const data = await res.json();
         dispatch(receiveListings(data.listings))
@@ -37,34 +37,29 @@ export const fetchListings = () => async (dispatch) => {
 };
 
 export const fetchListing = (listingId) => async (dispatch) => {
-    const res = await fetch(`/api/listings/${listingId}`)
+    const res = await csrfFetch(`/api/listings/${listingId}`)
     if (res.ok) {
         const data = await res.json(); 
         dispatch(receiveListing(data.listing))
     };
 };
 
-export const createListing = (listing) => async (dispatch) => {
-    const res = await fetch('/api/listings', {
+export const createListing = (formData) => async (dispatch) => {
+    const res = await csrfFetch('/api/listings', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(listing)
+        body: formData
     })
     if (res.ok) {
         const data = await res.json();
         dispatch(receiveListing(data.listing))
+        return data.listing.id;
     };
 };
 
-export const updateListing = (listing) => async (dispatch) => {
-    const res = await fetch(`/api/listings/${listing.id}`, {
+export const updateListing = (formData, listingId) => async (dispatch) => {
+    const res = await csrfFetch(`/api/listings/${listingId}`, {
         method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(listing)
+        body: formData
     })
     if (res.ok) {
         const data = await res.json();
@@ -73,7 +68,7 @@ export const updateListing = (listing) => async (dispatch) => {
 };
 
 export const deleteListing = (listingId) => async (dispatch) => {
-    const res = await fetch(`/api/listings/${listingId}`, {
+    const res = await csrfFetch(`/api/listings/${listingId}`, {
         method: 'DELETE'
     })
     dispatch(removeListing(listingId))

@@ -1,5 +1,6 @@
 class Api::ListingsController < ApplicationController
     # before_action :require_logged_in, only: [:create, :edit, :update]
+    wrap_parameters include: Listing.attribute_names + [:photo]
 
     def index 
         @listings = Listing.all
@@ -63,5 +64,6 @@ class Api::ListingsController < ApplicationController
             :owner_id,
             photos: []
         )
+        .deep_transform_keys!(&:underscore)
     end
 end

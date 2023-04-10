@@ -4,15 +4,13 @@ import { getListing } from "../../store/listings";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchListing } from "../../store/listings";
 import { useEffect } from "react";
+import EditButton from "./editButton";
 import './ShowListing.css';
 
 function ShowListing() {
     const dispatch = useDispatch(); 
     const { listingId } = useParams();
     const sessionUser = useSelector(state => state.session.user)
-    console.log(sessionUser)
-    
-    
 
     useEffect(() => {
         dispatch(fetchListing(listingId))
@@ -30,7 +28,7 @@ function ShowListing() {
         }
         let editButton;
         if (sessionUser && sessionUser.id === ownerId) {
-            editButton = <button >Edit button if user is owner</button>
+            editButton = <EditButton/>
         }
 
         let pictures
@@ -95,10 +93,10 @@ function ShowListing() {
                         <div className="showScroll">
                             <div className="sOverviewDiv">
                                 <ul className="showOverview">
-                                    <li><i className="fa-regular fa-building"></i> {houseType}</li>
-                                    <li><i className="fa-regular fa-calendar"></i> Built in {yearBuilt}</li>
-                                    <li><i className="fa-regular fa-snowflake"></i> {airCond}</li>
-                                    <li><i className="fa-solid fa-square-parking"></i> {parking}</li>
+                                    <li key="houseType"><i className="fa-regular fa-building"></i> {houseType}</li>
+                                    <li key="yearBuilt"><i className="fa-regular fa-calendar"></i> Built in {yearBuilt}</li>
+                                    <li key="airCond"><i className="fa-regular fa-snowflake"></i> {airCond}</li>
+                                    <li key="parking"><i className="fa-solid fa-square-parking"></i> {parking}</li>
                                 </ul>
                             </div>
                             <div className="showDescription">

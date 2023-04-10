@@ -27,7 +27,6 @@ function SignupFormPage() {
                 } catch {
                   data = await res.text(); // Will hit this case if the server is down
                 }
-                console.log(data)
                 if (data?.errors) setErrors([data.errors]);
                 else if (data) setErrors([data]);
                 else setErrors([res.statusText]);
@@ -37,7 +36,7 @@ function SignupFormPage() {
     }
     
     return (
-        <form className="signUpForm"onSubmit={handleSubmit}>
+        <form className="signUpForm" onSubmit={handleSubmit}>
             <label className='sFormLabel'>
                 Email
                 <br/>
