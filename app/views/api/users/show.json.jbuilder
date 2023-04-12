@@ -1,3 +1,6 @@
 json.user do
-    json.extract! @user, :id, :email, :created_at, :updated_at
+    json.extract! @user, :id, :email
+    json.favorites do 
+        json.array! @favorites
+    end
 end

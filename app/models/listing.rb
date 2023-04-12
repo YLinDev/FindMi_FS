@@ -22,6 +22,8 @@
 #  owner_id        :bigint           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  lat             :float
+#  lng             :float
 #
 class Listing < ApplicationRecord
     validates :price, :bedrooms, :bathrooms, :sqft, :listing_type, 
@@ -37,6 +39,11 @@ class Listing < ApplicationRecord
     belongs_to :user, 
         foreign_key: :owner_id,
         inverse_of: :listings
+
+    has_many :favorites,
+        foreign_key: :listing_id,
+        inverse_of: :listing,
+        dependent: :destroy
 
     has_many_attached :photos
 

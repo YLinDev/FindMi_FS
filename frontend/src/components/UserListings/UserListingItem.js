@@ -1,8 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import FavButton from "../FavButton";
 
-function ListingItem({listing, sessionUser, favorites}) {
+function UserListingItem({listing}) {
     const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl } = listing
     const history = useHistory(); 
 
@@ -15,16 +14,13 @@ function ListingItem({listing, sessionUser, favorites}) {
     let pictures;
     if (photosUrl && Array.isArray(photosUrl)) {
         pictures = <img className="cardPic" src={photosUrl[0]} alt=""/>
-    } else {
-        pictures = <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
-    }
+    } 
 
     return (
-            <li className="cardDiv" 
-                onClick={() => history.push(`show/${id}`)}
+            <li className="YC_cardDiv" 
+                onClick={() => history.replace(`/show/${id}`)}
             >
                     <div className="card"> 
-                        <FavButton sessionUser={sessionUser} listing={listing} favorites={favorites}/>
                         <div className="cardTop">
                             {pictures}
                         </div>
@@ -47,4 +43,4 @@ function ListingItem({listing, sessionUser, favorites}) {
     )
 }
 
-export default ListingItem; 
+export default UserListingItem; 

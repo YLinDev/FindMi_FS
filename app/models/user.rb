@@ -22,6 +22,13 @@ class User < ApplicationRecord
     dependent: :destroy,
     inverse_of: :user
 
+  has_many :favorites,
+    foreign_key: :saver_id,
+    dependent: :destroy,
+    inverse_of: :saver
+
+  has_many :saved_listings, through: :favorites, source: :listing
+
   def self.find_by_credentials(email, password)
       user = User.find_by(email: email)
       if user 

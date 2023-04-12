@@ -1,10 +1,10 @@
-.homeCollection{
+.yourCollection{
     width: 60%; 
     display: flex;
     flex-direction: column;
 }
 
-#HC_scrollCollection{
+#YC_scrollCollection{
     display: flex; 
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -13,12 +13,11 @@
     padding: 10px;
 }
 
-.HC_header {
+.YC_header {
     padding: 10px; 
 }
 
-.HC_cardDiv {
+.YC_cardDiv {
     padding: 5px;
 
 }
-

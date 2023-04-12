@@ -6,6 +6,7 @@ import IntroBar from "./components/IntroBar";
 import FirstCollection from "./components/FirstCollection";
 import Home from "./components/Home";
 import ShowListing from "./components/ShowListing";
+import UserListings from "./components/UserListings";
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route path="/userListing/:userId">
+            <UserListings />
           </Route>
           <Route path="/show/:listingId">
             <ShowListing />

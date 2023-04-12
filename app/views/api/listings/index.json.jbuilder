@@ -36,10 +36,3 @@ json.listings do
     end
 end
 
-# json.listings({})
-
-# json.listings do 
-#     json.array! @listings do |listing|
-#         json.partial! 'api/listings/listing', listing: listing
-#      end
-# end

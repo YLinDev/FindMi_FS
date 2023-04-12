@@ -14,6 +14,7 @@ class Api::SessionsController < ApplicationController
       params[:password]
     )
     if @user
+      @favorites = @user.favorites
       login!(@user)
       render 'api/users/show'
     else 
