@@ -19,7 +19,7 @@ function ShowListing() {
     
     const listing = useSelector(getListing(parseInt(listingId)))
     if (listing) {
-        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl } = listing
+        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl, monthlyHoaFee } = listing
         
         let houseType;
         if (condo) {
@@ -43,6 +43,12 @@ function ShowListing() {
             pictures = photosUrl.map((url) => <img src={url}/>)
         } else {
             pictures = <img src={require('././assets/stock-image.jpeg')} alt=""/>
+        }
+        let monthly 
+        if (monthlyHoaFee === 0) {
+            monthly = "No HOA"
+        } else {
+            monthly = `$${monthlyHoaFee} / month HOA`
         }
 
         return (
@@ -101,6 +107,7 @@ function ShowListing() {
                                 <ul className="showOverview">
                                     <li key="houseType"><i className="fa-regular fa-building"></i> {houseType}</li>
                                     <li key="yearBuilt"><i className="fa-regular fa-calendar"></i> Built in {yearBuilt}</li>
+                                    <li key="airCond"><i class="fa-solid fa-hand-holding-dollar"></i> {monthly}</li>
                                     <li key="airCond"><i className="fa-regular fa-snowflake"></i> {airCond}</li>
                                     <li key="parking"><i className="fa-solid fa-square-parking"></i> {parking}</li>
                                 </ul>
