@@ -60,3 +60,21 @@ export function SellFormModal({ onClose, children }) {
         modalNode
     );
 }
+
+export function ShowModal({ onClose, children }) {
+    const modalNode = useContext(ModalContext);
+    if (!modalNode) return null;
+
+    return ReactDOM.createPortal(
+        <div id="showLModal">
+            {/* <div className='sellCloseButtonDiv'>
+                <i className="fa-solid fa-square-xmark"></i>
+            </div> */}
+            <div id="showLModal-background" onClick={onClose} />
+                <div id="showLModal-content">
+                    {children}
+                </div>
+        </div>,
+        modalNode
+    );
+}

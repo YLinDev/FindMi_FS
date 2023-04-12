@@ -7,7 +7,7 @@ export function FormModal({ onClose, onSuccess }) {
     return (
       <SellFormModal onClose={onClose}>
         <div className="session-modal">
-          <ListingForm onSuccess={onSuccess}/>
+          <ListingForm onSuccess={onSuccess} onClose={onClose}/>
         </div>
       </SellFormModal>
     );

@@ -2,6 +2,7 @@ import React from "react";
 import HomeListingItem from "./HomeListingItem";
 
 function HomeListingsList({listings}) {
+    console.log(listings)
     return (
         <ul id="HC_scrollCollection">
             {listings.map((listing) => (

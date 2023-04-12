@@ -4,13 +4,13 @@ import { fetchListings, getListings } from "../../store/listings";
 import HomeListingsList from "./HomeListingsList";
 import './HomeCollection.css';
 
-function HomeCollection() {
-    const dispatch = useDispatch();
-    const listings = useSelector(getListings)
+function HomeCollection({listings}) {
+    // const dispatch = useDispatch();
+    // const listings = useSelector(getListings)
 
-    useEffect(() => {
-        dispatch(fetchListings())
-    }, [])
+    // useEffect(() => {
+    //     dispatch(fetchListings())
+    // }, [])
 
 
     return (

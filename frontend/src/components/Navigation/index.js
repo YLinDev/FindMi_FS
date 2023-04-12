@@ -41,7 +41,7 @@ function Navigation() {
           <RentButton />
           <button className='navButtons'>Manage Rentals</button>
         </div>
-        <Link to="/"><img className="icon" src={require('././assets/findMiLogo.png')} alt=""/></Link>
+        <Link to="/" className="icon"><img  src={require('././assets/findMiLogo.png')} alt=""/></Link>
         <div >
           <button className='navButtons'>Agent Finder</button>
           <button className='navButtons'>Advertise</button>

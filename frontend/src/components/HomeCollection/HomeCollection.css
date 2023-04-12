@@ -91,12 +91,16 @@
     flex-wrap: wrap;
     overflow-x: hidden;
     overflow-y: auto;
-    align-content: center;
     justify-content: center;
     padding: 10px;
 }
 
 .HC_header {
     padding: 10px; 
+}
+
+.HC_cardDiv {
+    padding: 5px;
+
 }
 

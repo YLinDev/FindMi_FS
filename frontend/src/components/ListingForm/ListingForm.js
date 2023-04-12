@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import './ListingForm.css'
 
 
-function ListingForm() {
+function ListingForm({onClose}) {
     const { listingId } = useParams();
     const history = useHistory();
     const dispatch = useDispatch();
@@ -20,11 +20,11 @@ function ListingForm() {
     let submitButton; 
     let formHeading;
     if (listingId) {
-        submitButton = <button className="sFormButton" type="submit" 
+        submitButton = <button className="sFormButton" type="submit"
                 >Edit Listing</button>
         formHeading = <h1 className='formHeading'>Edit Listing</h1>
     } else {
-        submitButton = <button className="sFormButton" type="submit" 
+        submitButton = <button className="sFormButton" type="submit"
                 >Create Listing</button>
         formHeading = <h1 className='formHeading'>Create a New Listing</h1>
     };
@@ -62,7 +62,7 @@ function ListingForm() {
     const [price, setPrice] = useState("");
     const [sqft, setSqft] = useState("");
     const [year_built, setYearBuilt] = useState("");
-    const [price_per_sqft, setPricePerSquare] = useState("");
+    const [price_per_sqft, setPricePerSquare] = useState(0);
     const [views, setViews] = useState(0);
     const [saves, setSaves] = useState(0);
     const [createdAt, setCreatedAt] = useState('');
@@ -95,8 +95,6 @@ function ListingForm() {
         }
     }, [dispatch, listingId])
 
-    console.log(imageUrls)
-
     const handleSubmit = async (e) => {
         e.preventDefault(); 
         const formData = new FormData();
@@ -114,8 +112,6 @@ function ListingForm() {
 			}
 		} 
         
-        setPricePerSquare((price/sqft).toFixed(0));
-
         formData.append('listing[price]', price);
         formData.append('listing[bedrooms]', bedrooms);
         formData.append('listing[bathrooms]', bathrooms);
@@ -140,10 +136,12 @@ function ListingForm() {
 
         if (listingId) {
 			dispatch(updateListing(formData, listingId));
-            history.push(`/show/${listingId}`);
+            document.getElementById('sellModal-background').click()
+            return history.push(`/show/${listingId}`);
 		} else {
             dispatch(createListing(formData));
-            history.push("/");
+            document.getElementById('sellModal-background').click()
+            return history.push("/");
 		}
         
     }
@@ -158,7 +156,7 @@ function ListingForm() {
                     Listing for:
                     <label className='LFlabel'>
                         Sale
-                        <input type='radio' name="listingFor" value="sale" checked
+                        <input type='radio' name="listingFor" value="sale"
                             onChange={(e) => setListingType(e.target.value)}
                         />
                     </label>
@@ -197,7 +195,10 @@ function ListingForm() {
                     Price
                     <input className='LFInput' type='number' min='1'
                         value = {price}
-                        onChange={(e) => setPrice(e.target.value)}
+                        onChange={(e) => {
+                            setPrice(e.target.value); 
+                            setPricePerSquare((price/sqft).toFixed(0));
+                        }}
                         required
                     />
                 </label>
@@ -221,7 +222,7 @@ function ListingForm() {
                     Building Type
                     <label className='LFlabel'>
                         Condo
-                        <input type='radio' name="condo" value='true' checked
+                        <input type='radio' name="condo" value='true' 
                             onChange={(e) => setCondo(e.target.value)}
                         />
                     </label>

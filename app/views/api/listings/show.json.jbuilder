@@ -19,7 +19,10 @@ json.listing do
         :saves,
         :owner_id,
         :created_at,
-        :updated_at
+        :updated_at,
+        :lat,
+        :lng
+        
         if @listing.photos.attached?
             json.photos_url @listing.photos.map { |photo| photo.url }
         else

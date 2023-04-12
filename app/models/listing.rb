@@ -28,12 +28,35 @@ class Listing < ApplicationRecord
         :year_built, :description, :air_cond, :parking, :monthly_hoa_fee,
         :price_per_sqft, :overview, :views, :saves, :owner_id, presence: true 
     validates :condo, inclusion: [true, false]
-    validates :address, uniqueness: true
+    validates :address, uniqueness: true, presence: true
+
+    geocoded_by :address_for_map, latitude: :lat, longitude: :lng
+
+    after_validation :geocode
 
     belongs_to :user, 
         foreign_key: :owner_id,
         inverse_of: :listings
 
     has_many_attached :photos
+
+    def address_for_map
+        if address.include? "APT" 
+            start_index = address.index("APT")
+            end_index = address.index(",")
+            return address[0...start_index] + address[end_index..-1]
+        end
+        if address.include? "#"
+            start_index = address.index("#")
+            end_index = address.index(",")
+            return address[0...start_index] + address[end_index..-1]
+        end
+        if address.include? "UNIT"
+            start_index = address.index("#")
+            end_index = address.index(",")
+            return address[0...start_index] + address[end_index..-1]
+        end
+        address
+    end
 
 end

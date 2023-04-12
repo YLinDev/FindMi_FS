@@ -37,6 +37,8 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 gem "faker"
 
+gem "geocoder"
+
 gem "aws-sdk-s3"
 
 group :development, :test do

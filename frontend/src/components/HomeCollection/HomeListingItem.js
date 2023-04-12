@@ -19,7 +19,7 @@ function HomeListingItem({listing}) {
     }
 
     return (
-            <li className="cardDiv" 
+            <li id={`HC_${id}`} className="HC_cardDiv" 
                 onClick={() => history.push(`show/${id}`)}
             >
                     <div className="card"> 

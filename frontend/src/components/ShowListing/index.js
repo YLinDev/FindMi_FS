@@ -47,8 +47,7 @@ function ShowListing() {
 
         return (
             <> 
-                <div >
-                    <div className="showDiv">
+                <div className="showDiv">
                     <div className="showLeft">
                         {pictures}
                     </div>
@@ -115,7 +114,6 @@ function ShowListing() {
                                 {deleteButton}
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </>

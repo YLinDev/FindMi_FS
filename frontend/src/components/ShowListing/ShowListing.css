@@ -3,6 +3,7 @@
     position: absolute;
     height: 678px;
     justify-content: center;
+    padding-top: 5px;
 }
 
 .showLeft {

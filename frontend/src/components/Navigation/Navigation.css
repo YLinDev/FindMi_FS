@@ -53,7 +53,7 @@ a {
 }
 
 .navButtons {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .icon {
@@ -67,5 +67,7 @@ a {
     height: 70px; 
     display: flex;
     align-content: center;
-    padding: 15px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(209, 209, 213);
+    align-items: flex-end;
 }
