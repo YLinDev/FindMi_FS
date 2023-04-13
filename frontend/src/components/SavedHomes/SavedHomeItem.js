@@ -2,26 +2,24 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import FavButton from "../FavButton";
 
-function HomeListingItem({listing, sessionUser, favorites}) {
-    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl } = listing
+function SavedHomeItem({listing, favorites, sessionUser}) {
+    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl, listingType } = listing
     const history = useHistory(); 
 
     let text;
     if (condo) {
-        text = "Condo for sale"
+        text = "Condo"
     } else {
-        text = "House for sale"
+        text = "House"
     }
     // let pictures;
     // if (photosUrl && Array.isArray(photosUrl)) {
     //     pictures = <img className="cardPic" src={photosUrl[0]} alt=""/>
-    // } else {
-    //     pictures = <img className="cardPic" src={require('./assets/stock-image.jpeg')} alt=""/>
-    // }
+    // } 
 
     return (
-            <li id={`HC_${id}`} className="HC_cardDiv" 
-                onClick={() => history.push(`show/${id}`)}
+            <li className="YC_cardDiv" 
+                onClick={() => history.replace(`/show/${id}`)}
             >
                     <div className="card"> 
                         <div className="cardTop" style={{ 
@@ -38,7 +36,7 @@ function HomeListingItem({listing, sessionUser, favorites}) {
                                 {bedrooms} bds |&nbsp;
                                 {bathrooms} ba |&nbsp;
                                 {sqft.toLocaleString('en-US')} sqft |&nbsp;
-                                {text}
+                                {text} for {listingType}
                             </div>
                             <div className="cardAddress">
                                 {address}
@@ -49,4 +47,4 @@ function HomeListingItem({listing, sessionUser, favorites}) {
     )
 }
 
-export default HomeListingItem; 
+export default SavedHomeItem; 

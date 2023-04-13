@@ -50,11 +50,11 @@
 
 }
 
-.cardPic {
+/* #cardPic {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 100%; 
-}
+} */
 
 .cardBottom{
     color: rgb(42, 42, 51);
@@ -68,6 +68,7 @@
 .cardInfo {
     font-size: 14px;
     line-height: 24px;
+    text-transform: capitalize;
 }
 
 .cardAddress {
@@ -76,7 +77,12 @@
 }
 
 .cardTop {
+    display: flex; 
     height: 200px; 
-    width: 340px; 
+    width: 340px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    flex-direction: row-reverse;
 }
 

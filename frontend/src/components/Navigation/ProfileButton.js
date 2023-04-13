@@ -34,7 +34,7 @@ function ProfileButton({ user }) {
             {showMenu && (
                 <section className="profile-dropdown">
                     <ul>
-                        <a>Saved homes</a>
+                        <Link to={`/savedHomes/${user.id}`}>Saved homes</Link>
                     </ul>
                     <ul>
                         <a>Saved searches</a>

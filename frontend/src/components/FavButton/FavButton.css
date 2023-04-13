@@ -1,3 +1,10 @@
 .favButton {
-    z-index: 10;
+    display: flex; 
+    font-size: 20px;
+    flex-direction: column;
+    height: 25px; 
+}
+
+.favButton:hover {
+    font-size: 40px;
 }

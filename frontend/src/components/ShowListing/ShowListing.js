@@ -19,7 +19,7 @@ function ShowListing() {
     
     const listing = useSelector(getListing(parseInt(listingId)))
     if (listing) {
-        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl, monthlyHoaFee } = listing
+        const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl, monthlyHoaFee, listingType } = listing
         
         let houseType;
         if (condo) {
@@ -92,7 +92,7 @@ function ShowListing() {
                             <div className="showType">
                                 <i className="fa-solid fa-circle"></i>
                             </div>
-                            <p>For Sale</p>
+                            <p>For {listingType}</p>
                             <p>FindMiMate : None</p>
                         </div>
                         <div className="showTourAgent">

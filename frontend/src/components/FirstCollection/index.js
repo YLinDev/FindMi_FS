@@ -12,13 +12,14 @@ function FirstCollection() {
     const favorites = useSelector(getFavorites)
 
     useEffect(() => {
-        dispatch(fetchFavorites())
+        if (sessionUser){
+            dispatch(fetchFavorites())
+        }
     }, [dispatch, sessionUser])
 
     useEffect(() => {
         dispatch(fetchListings())
     }, [])
-
 
     return (
         <div className="firstCollection">

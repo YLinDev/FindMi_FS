@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { deleteListing } from '../../store/listings';
 import { useDispatch } from 'react-redux';
 import { useParams, useHistory } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 
 function DeleteButton() {
     const dispatch = useDispatch(); 
     const history = useHistory(); 
     const { listingId } = useParams(); 
+    const sessionUser = useSelector(state => state.session.user)
 
     const handleClick = (e) => {
         e.preventDefault(); 
         dispatch(deleteListing(listingId))
-        history.push("/");
+        history.push(`/userListing/${sessionUser.id}`);
     }
     
     return (
@@ -20,7 +21,7 @@ function DeleteButton() {
             <button 
                 onClick={(e) => handleClick(e)}
                 className='deleteListing'
-            >Delete Button</button>
+            >Delete Listing</button>
         </>
     );
 }

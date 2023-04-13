@@ -15,6 +15,9 @@
 
 .HC_header {
     padding: 10px; 
+    font-size: 20px;
+    display: flex; 
+    border-bottom: 1px solid rgb(209, 209, 213);
 }
 
 .HC_cardDiv {

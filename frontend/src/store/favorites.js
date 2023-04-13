@@ -49,17 +49,17 @@ export const setupFav = (formData) => async (dispatch) => {
         method: 'POST',
         body: formData
     })
-    // if (res.ok) {
-    //     const data = await res.json();
-    //     dispatch(receiveFavorite(data.favorite))
-    // }
+    if (res.ok) {
+        const data = await res.json();
+        dispatch(receiveFavorites())
+    }
 }
 
 export const deleteFav = (favoriteId) => async (dispatch) => {
     const res = await csrfFetch(`/api/favorites/${favoriteId}`, {
         method: 'DELETE'
     })
-    dispatch(removeFavorite(favoriteId))
+    dispatch(receiveFavorites())
 }
 
 function favoritesReducer(state = {}, action) {

@@ -3,30 +3,32 @@ import { useHistory } from "react-router-dom";
 import FavButton from "../FavButton";
 
 function ListingItem({listing, sessionUser, favorites}) {
-    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl } = listing
+    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl, listingType } = listing
     const history = useHistory(); 
 
     let text;
     if (condo) {
-        text = "Condo for sale"
+        text = "Condo"
     } else {
-        text = "House for sale"
+        text = "House"
     }
-    let pictures;
-    if (photosUrl && Array.isArray(photosUrl)) {
-        pictures = <img className="cardPic" src={photosUrl[0]} alt=""/>
-    } else {
-        pictures = <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
-    }
+    // let pictures;
+    // if (photosUrl && Array.isArray(photosUrl)) {
+    //     pictures = <img className="cardPic" src={photosUrl[0]} alt=""/>
+    // } else {
+    //     pictures = <img className="cardPic" src={require('././assets/stock-image.jpeg')} alt=""/>
+    // }
 
     return (
             <li className="cardDiv" 
                 onClick={() => history.push(`show/${id}`)}
             >
                     <div className="card"> 
-                        <FavButton sessionUser={sessionUser} listing={listing} favorites={favorites}/>
-                        <div className="cardTop">
-                            {pictures}
+                        <div id="cardPic" className="cardTop" style={{ 
+                            backgroundImage: `url(${photosUrl[0]})` 
+                            }}>
+                            {/* {pictures} */}
+                            <FavButton sessionUser={sessionUser} listing={listing} favorites={favorites}/>
                         </div>
                         <div className="cardBottom">
                             <div className="cardPrice">
@@ -36,7 +38,7 @@ function ListingItem({listing, sessionUser, favorites}) {
                                 {bedrooms} bds |&nbsp;
                                 {bathrooms} ba |&nbsp;
                                 {sqft.toLocaleString('en-US')} sqft |&nbsp;
-                                {text}
+                                {text} for {listingType}
                             </div>
                             <div className="cardAddress">
                                 {address}

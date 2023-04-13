@@ -12,12 +12,14 @@ class Api::FavoritesController < ApplicationController
     def create 
         @favorite = Favorite.new(favorite_params)
         @favorite.save! 
+        render :show
     end
 
     def destroy 
         @favorite = Favorite.find(params[:id])
         if (@favorite.saver_id === current_user.id) 
             @favorite.destroy
+            render :show
         end
     end
 

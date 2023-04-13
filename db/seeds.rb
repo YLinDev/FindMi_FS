@@ -1515,8 +1515,1659 @@ data = [
     "unit": "# 5A",
     "zipcode": "11375",
     "zpid": 2058165357
-  }
+  },
+    {
+      "bathrooms": 3,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "TOWNHOUSE",
+      "imgSrc": "https://photos.zillowstatic.com/fp/78d6fc07564878cc26410523285e803e-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.685028,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 2160,
+      "longitude": -73.9855,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1875,
+      "openHouse": "Sun. 2-3:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681684200000,
+            "open_house_start": 1681678800000
+          }
+        ]
+      },
+      "price": 3495000,
+      "priceForHDP": 3495000,
+      "rentZestimate": 8531,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "201 Bergen St",
+      "taxAssessedValue": 2808000,
+      "zestimate": 3429331,
+      "zipcode": "11217",
+      "zpid": 30567052
+    },
+    {
+      "bathrooms": 5,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/6704b3c272428ccc8cba1c27e4d09fee-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.67566,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 2300,
+      "longitude": -73.98313,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1240,
+      "price": 4595000,
+      "priceForHDP": 4595000,
+      "rentZestimate": 6000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "576 Carroll St",
+      "taxAssessedValue": 2831000,
+      "zestimate": 4467361,
+      "zipcode": "11215",
+      "zpid": 30583198
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 5,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/3a07ed42d0be789f50ab22b24d4d89f9-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.62834,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 2947,
+      "longitude": -73.92275,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 3131,
+      "price": 1199000,
+      "priceForHDP": 1199000,
+      "rentZestimate": 4632,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "1167 E 55th St",
+      "taxAssessedValue": 668000,
+      "zestimate": 1145162,
+      "zipcode": "11234",
+      "zpid": 30761237
+    },
+    {
+      "bathrooms": 4,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/35b6600ca70d207f65f1840449cee49c-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.615643,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 3750,
+      "longitude": -73.899475,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 5000,
+      "openHouse": "Sun. 12-2pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681678800000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 1399999,
+      "priceForHDP": 1399999,
+      "rentZestimate": 2199,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "2424 E 74th St",
+      "taxAssessedValue": 1242000,
+      "zestimate": 1307537,
+      "zipcode": "11234",
+      "zpid": 30783368
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/f7788d2c598e6f8a57d43a25339080a0-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.676464,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1113,
+      "longitude": -73.972725,
+      "openHouse": "Sun. 12:30-2pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681678800000,
+            "open_house_start": 1681673400000
+          }
+        ]
+      },
+      "price": 1865000,
+      "priceForHDP": 1865000,
+      "rentZestimate": 5899,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "168 Sterling Pl APT 4R",
+      "taxAssessedValue": 908688,
+      "unit": "Apt 4R",
+      "zestimate": 1865004,
+      "zipcode": "11217",
+      "zpid": 62646498
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/1b2e5242f43c43cc033e2f66559106a0-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.69456,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1088,
+      "longitude": -73.98269,
+      "openHouse": "Sun. 12-1:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681677000000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 1195000,
+      "priceForHDP": 1195000,
+      "rentZestimate": 4353,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "176 Johnson St APT 6A",
+      "taxAssessedValue": 336090,
+      "unit": "Apt 6A",
+      "zestimate": 1182764,
+      "zipcode": "11201",
+      "zpid": 64697978
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/4cf29b323c5e40bdbf07cf3903a2ea23-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.63567,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "longitude": -73.9602,
+      "price": 800000,
+      "priceForHDP": 800000,
+      "rentZestimate": 2800,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "631 E 18th St #3C",
+      "unit": "# 3C",
+      "zestimate": 881500,
+      "zipcode": "11226",
+      "zpid": 2078539218
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/ac0431a8949222b433aa6606af5c5528-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.675056,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "longitude": -73.96889,
+      "openHouse": "Sun. 1-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 2275000,
+      "priceForHDP": 2275000,
+      "rentZestimate": 8364,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "50 Plaza St E APT 12C",
+      "unit": "Apt 12C",
+      "zestimate": 1667900,
+      "zipcode": "11238",
+      "zpid": 72670728
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=575x242&zoom=17&center=40.64452362060547,-73.99698638916016&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w&signature=cZ1oiMonOtCOQ6Qf0o_ZI7C80R4=",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.644524,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 805,
+      "longitude": -73.99699,
+      "price": 588000,
+      "priceForHDP": 588000,
+      "rentZestimate": 2511,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "873 42nd St APT 2B",
+      "taxAssessedValue": 85280,
+      "unit": "Apt 2B",
+      "zestimate": 576470,
+      "zipcode": "11232",
+      "zpid": 94719049
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 5,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/52ac5ac0d0328f44f25ab79453feb48f-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.58872,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 2300,
+      "longitude": -73.98759,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 2900,
+      "price": 1698000,
+      "priceForHDP": 1698000,
+      "rentZestimate": 3653,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "142 Bay 47th St",
+      "taxAssessedValue": 851000,
+      "zestimate": 1612650,
+      "zipcode": "11214",
+      "zpid": 30731472
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/f20ea4348e15163fcb527d88d5339af5-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.655903,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1650,
+      "longitude": -73.97401,
+      "openHouse": "Sun. 1-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 1795000,
+      "priceForHDP": 1795000,
+      "rentZestimate": 4749,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "135 Prospect Park SW APT E1",
+      "unit": "Apt E1",
+      "zestimate": 1776621,
+      "zipcode": "11218",
+      "zpid": 88887695
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/e6cf79ef18d2f49a2e4fc108b05e9172-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.57772,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 1000,
+      "longitude": -73.971855,
+      "lotAreaUnit": "acres",
+      "lotAreaValue": 4.35,
+      "price": 389000,
+      "priceForHDP": 389000,
+      "rentZestimate": 2429,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "2915 W 5th St APT 4G",
+      "taxAssessedValue": 34955000,
+      "unit": "Apt 4G",
+      "zipcode": "11224",
+      "zpid": 245011938
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/0e8b8da84b0d643f790df0743709bd9c-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.60556,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1690,
+      "longitude": -73.940575,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1710,
+      "openHouse": "Sun. 2-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681678800000
+          }
+        ]
+      },
+      "price": 899000,
+      "priceForHDP": 899000,
+      "rentZestimate": 2647,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "2983 Avenue S",
+      "taxAssessedValue": 848000,
+      "zestimate": 881108,
+      "zipcode": "11229",
+      "zpid": 30729101
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/a0cbf0437e150e9f40335eaffb2ff5a1-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.67593,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1162,
+      "longitude": -73.98358,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 5757,
+      "openHouse": "Sun. 11am-12:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681673400000,
+            "open_house_start": 1681668000000
+          }
+        ]
+      },
+      "price": 1500000,
+      "priceForHDP": 1500000,
+      "rentZestimate": 6000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "560 Carroll St APT 4B",
+      "taxAssessedValue": 144210,
+      "unit": "Apt 4B",
+      "zestimate": 1500000,
+      "zipcode": "11215",
+      "zpid": 112077629
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 1,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/a4cac72bea2e0d47191f1d7ae9162b90-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.60878,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 825,
+      "longitude": -73.99856,
+      "price": 338000,
+      "priceForHDP": 338000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "1845 82nd St APT C-8",
+      "unit": "Apt C-8",
+      "zipcode": "11214",
+      "zpid": 2058074718
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/a36db901f5c9825f736f3f6bef255bb0-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.681217,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1600,
+      "longitude": -73.97902,
+      "openHouse": "Sun. 12-1:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681677000000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 2195000,
+      "priceForHDP": 2195000,
+      "rentZestimate": 3897,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "102 Saint Marks Pl APT 1",
+      "taxAssessedValue": 554433,
+      "unit": "Apt 1",
+      "zestimate": 2195005,
+      "zipcode": "11217",
+      "zpid": 79725392
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/28d9e1f8e066593efcbfea6e0c8a45e9-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.68251,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 899,
+      "longitude": -73.95988,
+      "openHouse": "Sun. 12-1pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681675200000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 950000,
+      "priceForHDP": 950000,
+      "rentZestimate": 2887,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "82 Irving Pl APT 6C",
+      "taxAssessedValue": 151314,
+      "unit": "Apt 6C",
+      "zestimate": 934738,
+      "zipcode": "11238",
+      "zpid": 119571770
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/2a212e292a01da6779eb18e559922085-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.586903,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 950,
+      "longitude": -73.93296,
+      "price": 288000,
+      "priceForHDP": 288000,
+      "rentZestimate": 2359,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "3845 Shore Pkwy APT 6A",
+      "unit": "Apt 6A",
+      "zestimate": 275340,
+      "zipcode": "11235",
+      "zpid": 79711166
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 6,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/b936f8d1336445855bdf6419c73f749e-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.714348,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 2800,
+      "longitude": -73.96353,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1500,
+      "openHouse": "Sat. 12-2:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681594200000,
+            "open_house_start": 1681585200000
+          },
+          {
+            "open_house_end": 1681680600000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 2999000,
+      "priceForHDP": 2999000,
+      "rentZestimate": 7539,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "264 Berry St",
+      "taxAssessedValue": 2810000,
+      "zestimate": 2963717,
+      "zipcode": "11249",
+      "zpid": 30619076
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/3fdd318770430607d0849c46a8a7fe32-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.578587,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 736,
+      "longitude": -73.962524,
+      "openHouse": "Sun. 1-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 610000,
+      "priceForHDP": 610000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "3031 Brighton 5 St #3B",
+      "unit": "# 3B",
+      "zipcode": "11235",
+      "zpid": 2058074172
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/9fa1820358b9ae29cc530c8133bf6157-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.661396,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "longitude": -73.98121,
+      "openHouse": "Sun. 12-1:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681677000000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 1099999,
+      "priceForHDP": 1099999,
+      "rentZestimate": 3246,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "454 15th St APT 1L",
+      "unit": "Apt 1L",
+      "zestimate": 938100,
+      "zipcode": "11215",
+      "zpid": 79715307
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 1,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/1bf20fa770a88eb5ff9b692860f5c265-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.62104,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "longitude": -73.93948,
+      "openHouse": "Sun. 1-2pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681678800000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 339000,
+      "priceForHDP": 339000,
+      "rentZestimate": 2123,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "3626 Kings Hwy APT 3D",
+      "taxAssessedValue": 6717000,
+      "unit": "Apt 3D",
+      "zestimate": 240400,
+      "zipcode": "11234",
+      "zpid": 245010564
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/3fdd318770430607d0849c46a8a7fe32-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.578587,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 770,
+      "longitude": -73.962524,
+      "openHouse": "Sun. 1-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 650000,
+      "priceForHDP": 650000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "3031 Brighton 5 St #3A",
+      "unit": "# 3A",
+      "zipcode": "11235",
+      "zpid": 2058074508
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "comingSoonOnMarketDate": 1677110400000,
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/f7680fae260815cb9fa5d1e0c0c9ce90-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.635513,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 589,
+      "longitude": -73.89723,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1254,
+      "price": 550000,
+      "priceForHDP": 550000,
+      "rentZestimate": 2299,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "1478 E 93rd St",
+      "taxAssessedValue": 338000,
+      "zestimate": 542567,
+      "zipcode": "11236",
+      "zpid": 30777073
+    },
+    {
+      "bathrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/580e7652c0a2b885dc289645e12e2567-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.63476,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 3360,
+      "longitude": -74.02016,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1867,
+      "price": 1749000,
+      "priceForHDP": 1749000,
+      "rentZestimate": 1978,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "6727 5th Ave",
+      "taxAssessedValue": 1018000,
+      "zipcode": "11220",
+      "zpid": 142952405
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/2ba2b97594852c7ac319ec808363ac52-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.65686,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 1870,
+      "longitude": -73.97953,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1530,
+      "price": 2150000,
+      "priceForHDP": 2150000,
+      "rentZestimate": 2928,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "571 17th St",
+      "taxAssessedValue": 1508000,
+      "zipcode": "11218",
+      "zpid": 30579955
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 5,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/e286f449318b8ba4b30e04bcb7da392b-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.599743,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1888,
+      "longitude": -74.00527,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 2376,
+      "openHouse": "Sat. 1-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681596000000,
+            "open_house_start": 1681588800000
+          },
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 1198000,
+      "priceForHDP": 1198000,
+      "rentZestimate": 3128,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "1940 20th Dr",
+      "taxAssessedValue": 1011000,
+      "zestimate": 1159103,
+      "zipcode": "11214",
+      "zpid": 30715242
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/ac756df1ee88c5421532d908b73d1beb-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.680202,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1065,
+      "longitude": -73.96558,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 3820,
+      "openHouse": "Sun. 11:30am-1pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681675200000,
+            "open_house_start": 1681669800000
+          }
+        ]
+      },
+      "price": 1475000,
+      "priceForHDP": 1475000,
+      "rentZestimate": 5905,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "870 Pacific St APT 4R",
+      "taxAssessedValue": 315890,
+      "unit": "Apt 4R",
+      "zestimate": 1446078,
+      "zipcode": "11238",
+      "zpid": 121710350
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/6fd7bfaedf303d7e0e3c6ee054ea3202-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.667057,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 1876,
+      "longitude": -73.98748,
+      "openHouse": "Sun. 1:30-3pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681682400000,
+            "open_house_start": 1681677000000
+          }
+        ]
+      },
+      "price": 2150000,
+      "priceForHDP": 2150000,
+      "rentZestimate": 6639,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "294 12th St #1",
+      "taxAssessedValue": 638862,
+      "unit": "# 1",
+      "zestimate": 2150001,
+      "zipcode": "11215",
+      "zpid": 124764358
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/bb62775354b5a47d66c9b4a75e3010ad-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.708485,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "longitude": -73.95293,
+      "openHouse": "Sun. 12-1:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681677000000,
+            "open_house_start": 1681671600000
+          }
+        ]
+      },
+      "price": 1100000,
+      "priceForHDP": 1100000,
+      "rentZestimate": 2592,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "350 Hooper St #3",
+      "taxAssessedValue": 152633,
+      "unit": "# 3",
+      "zestimate": 1063800,
+      "zipcode": "11211",
+      "zpid": 300082612
+    },
+    {
+      "bathrooms": 2,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/70e8f05e0fe7f7a8b0ef975d086d8bc3-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.578365,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 1100,
+      "longitude": -73.97337,
+      "lotAreaUnit": "acres",
+      "lotAreaValue": 4.6800045913682276,
+      "price": 499900,
+      "priceForHDP": 499900,
+      "rentZestimate": 2500,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "2928 W 5th St APT 6C",
+      "taxAssessedValue": 53357000,
+      "unit": "Apt 6C",
+      "zipcode": "11224",
+      "zpid": 244988365
+    },
+    {
+      "bathrooms": 6,
+      "bedrooms": 9,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/7f9d4ba6a877f063d9b57e8123158351-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.608326,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 2820,
+      "longitude": -74.01174,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 3200,
+      "price": 2300000,
+      "priceForHDP": 2300000,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "136 N Bay 10th St",
+      "zipcode": "11228",
+      "zpid": 2058076699
+    },
+    {
+      "bathrooms": 7,
+      "bedrooms": 4,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/147a9c74654cf63e6c41bc79f947b189-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.72994,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 4133,
+      "longitude": -73.95204,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 1800,
+      "openHouse": "Sat. 12-2pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681592400000,
+            "open_house_start": 1681585200000
+          }
+        ]
+      },
+      "price": 4995000,
+      "priceForHDP": 4995000,
+      "rentZestimate": 6362,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "316 Eckford St",
+      "taxAssessedValue": 2489000,
+      "zestimate": 4770122,
+      "zipcode": "11222",
+      "zpid": 30620442
+    },
+    {
+      "bathrooms": 4,
+      "bedrooms": 11,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/2113838e35e18b113fd5d08ed848fa4e-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.62067,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 3680,
+      "longitude": -73.99484,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 3135,
+      "price": 1828000,
+      "priceForHDP": 1828000,
+      "rentZestimate": 5201,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "1634 66th St",
+      "taxAssessedValue": 666000,
+      "zestimate": 1758832,
+      "zipcode": "11204",
+      "zpid": 30682235
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 2,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/f100cdd0e019426cd26f0be80403acfe-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.674946,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 605,
+      "longitude": -73.940186,
+      "price": 550000,
+      "priceForHDP": 550000,
+      "rentZestimate": 2477,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "943 Saint Marks Ave APT 4C",
+      "taxAssessedValue": 101915,
+      "unit": "Apt 4C",
+      "zestimate": 535333,
+      "zipcode": "11213",
+      "zpid": 112079822
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 0,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/63dc426a7da7d68b3d83b9e46635b240-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.696594,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 450,
+      "longitude": -73.988396,
+      "openHouse": "Sun. 1-2:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681680600000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 357000,
+      "priceForHDP": 357000,
+      "rentZestimate": 4067,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "235 Adams St #8E",
+      "unit": "# 8E",
+      "zestimate": 355212,
+      "zipcode": "11201",
+      "zpid": 125932024
+    },
+    {
+      "bathrooms": 6,
+      "bedrooms": 7,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/5c2793ed4ca514b487ffac3b90fa6a9a-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.681904,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 3600,
+      "longitude": -73.97872,
+      "openHouse": "Thu. 5-6:30pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681435800000,
+            "open_house_start": 1681430400000
+          },
+          {
+            "open_house_end": 1681680600000,
+            "open_house_start": 1681675200000
+          }
+        ]
+      },
+      "price": 4200000,
+      "priceForHDP": 4200000,
+      "rentZestimate": 3664,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "390 Bergen St APT 3F",
+      "unit": "Apt 3F",
+      "zestimate": 1275400,
+      "zipcode": "11217",
+      "zpid": 2104172624
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 7,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "MULTI_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/9241691a798e1ccc523f8805d430644b-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.66647,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 4220,
+      "longitude": -73.97598,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 2000,
+      "openHouse": "Sun. 2-4pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681686000000,
+            "open_house_start": 1681678800000
+          }
+        ]
+      },
+      "price": 5350000,
+      "priceForHDP": 5350000,
+      "rentZestimate": 13457,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "626 6th St",
+      "taxAssessedValue": 5859000,
+      "zestimate": 5138815,
+      "zipcode": "11215",
+      "zpid": 30587682
+    },
+    {
+      "bathrooms": 3,
+      "bedrooms": 3,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": 0,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "SINGLE_FAMILY",
+      "imgSrc": "https://photos.zillowstatic.com/fp/01018a23750080194a7ae5acb8b31d41-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.64344,
+      "listing_sub_type": {
+        "is_FSBA": true
+      },
+      "livingArea": 1576,
+      "longitude": -73.93116,
+      "lotAreaUnit": "sqft",
+      "lotAreaValue": 2025,
+      "price": 749000,
+      "priceForHDP": 749000,
+      "rentZestimate": 2647,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "735 E 48th St",
+      "taxAssessedValue": 590000,
+      "zestimate": 735436,
+      "zipcode": "11203",
+      "zpid": 30656104
+    },
+    {
+      "bathrooms": 1,
+      "bedrooms": 1,
+      "city": "Brooklyn",
+      "country": "USA",
+      "currency": "USD",
+      "daysOnZillow": -1,
+      "homeStatus": "FOR_SALE",
+      "homeStatusForHDP": "FOR_SALE",
+      "homeType": "CONDO",
+      "imgSrc": "https://photos.zillowstatic.com/fp/1a4eecd71731b717de0dd892b6438d3f-p_e.jpg",
+      "isFeatured": false,
+      "isNonOwnerOccupied": true,
+      "isPreforeclosureAuction": false,
+      "isPremierBuilder": false,
+      "isUnmappable": false,
+      "isZillowOwned": false,
+      "latitude": 40.720238,
+      "listing_sub_type": {
+        "is_FSBA": true,
+        "is_openHouse": true
+      },
+      "livingArea": 778,
+      "longitude": -73.95646,
+      "openHouse": "Sun. 2:30-4pm",
+      "open_house_info": {
+        "open_house_showing": [
+          {
+            "open_house_end": 1681686000000,
+            "open_house_start": 1681680600000
+          }
+        ]
+      },
+      "price": 1295000,
+      "priceForHDP": 1295000,
+      "rentZestimate": 4784,
+      "shouldHighlight": false,
+      "state": "NY",
+      "streetAddress": "125 N 10th St APT S5D",
+      "taxAssessedValue": 173077,
+      "unit": "Apt S5D",
+      "zestimate": 1281740,
+      "zipcode": "11249",
+      "zpid": 89072888
+    }
 ]
+
+
+
 
 
 
@@ -1525,11 +3176,13 @@ data = [
     # Unnecessary if using `rails db:seed:replant`
     User.destroy_all
     Listing.destroy_all
+    Favorite.destroy_all
   
     puts "Resetting primary keys..."
     # For easy testing, so that after seeding, the first `User` has `id` of 1
     ApplicationRecord.connection.reset_pk_sequence!('users')
     ApplicationRecord.connection.reset_pk_sequence!('listings')
+    ApplicationRecord.connection.reset_pk_sequence!('favorites')
   
     puts "Creating users..."
     # Create one user with an easy to remember email, and password:
@@ -1607,13 +3260,24 @@ data = [
     #   owner_id: 1
     # )
 
-    random_boolean = [true, false].sample
     # random_hoa = [100, 200, 300, 400, 500].sample 
 
     data.each do |e| 
       if !e[:livingArea] 
         e[:livingArea] = 1000
       end
+      if !e[:bedrooms] 
+        e[:bedrooms] = 2
+      end
+      if !e[:bathrooms] 
+        e[:bathrooms] = 2
+      end
+      if !e[:price]
+        e[:price] = 888888
+      end
+      @list_type = ["sale", "rent"]
+      @air = ["window", "central", "none"]
+      @pk = ["1 garage", "street", "2 garage", "none"]
       pps = e[:price] / e[:livingArea]
       Listing.create!(
         price: e[:price], 
@@ -1621,18 +3285,18 @@ data = [
         bathrooms: e[:bathrooms],
         sqft: e[:livingArea], 
         address: "#{e[:streetAddress]}, #{e[:city]}, #{e[:state]}, #{e[:zipcode]}",
-        listing_type: "sell",
-        year_built: "2012",
-        description: "One loft studio",
-        condo: random_boolean, 
-        air_cond: 'none',
-        parking: 'none',
+        listing_type: @list_type.sample,
+        year_built: rand(2000..2023).to_s,
+        description: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),
+        condo: rand(2) == 1, 
+        air_cond: @air.sample,
+        parking: @pk.sample,
         monthly_hoa_fee: rand(1..500),
         price_per_sqft: pps,
-        overview: "Great Neighborhood",
+        overview: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),
         views: 0,
         saves: 0,
-        owner_id: rand(1..2)
+        owner_id: rand(1..3)
       )
     end
 

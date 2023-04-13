@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ListingMap from '../ListingMap';
 import ListingMapp from '../ListingMap/index2';
 import HomeCollection from '../HomeCollection';
+import FirstCollection from '../FirstCollection';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchListings, getListings } from '../../store/listings';
 import './Home.css'

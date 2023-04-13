@@ -1,16 +1,13 @@
-import { useSelector } from "react-redux";
-import { fetchFavorites, getFavorites, setupFav, deleteFav } from "../../store/favorites";
+import { fetchFavorites, setupFav, deleteFav } from "../../store/favorites";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import "./FavButton.css"
 
 
 function FavButton({listing, sessionUser, favorites}) {
     // const favorites = useSelector(getFavorites)
-
-    // useEffect(() => {
-    //     dispatch(fetchFavorites())
-    // }, [dispatch, sessionUser])
     const dispatch = useDispatch();
+    
     const listingId = String(listing.id)
     let userId;
     if (sessionUser) {
@@ -22,8 +19,15 @@ function FavButton({listing, sessionUser, favorites}) {
         favoriteId = favorites[String(listingId)].id
     } 
 
+    useEffect(() => {
+        if (sessionUser){
+            dispatch(fetchFavorites())
+        }
+    }, [dispatch, favoriteId])
+
     const handleCreateFav = (e) => {
         e.preventDefault(); 
+        e.stopPropagation();
         const formData = new FormData();
         formData.append("favorite[saverId]", userId)
         formData.append("favorite[listingId]", listing.id)
@@ -32,6 +36,7 @@ function FavButton({listing, sessionUser, favorites}) {
 
     const handleDeleteFav = (e) => {
         e.preventDefault(); 
+        e.stopPropagation();
         return dispatch(deleteFav(favoriteId))
     }
 

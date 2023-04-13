@@ -32,6 +32,12 @@ json.listings do
             else
                 json.photos_url '././assets/stock-image.jpeg'
             end 
+
+            if listing.favorites
+                json.saver_id listing.favorites.map { |saver| saver.saver_id }
+            else
+                json.saver_id []
+            end
         end
     end
 end

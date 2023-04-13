@@ -2,14 +2,14 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 function UserListingItem({listing}) {
-    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl } = listing
+    const { id, price, condo, bedrooms, bathrooms, sqft, address, photosUrl, listingType } = listing
     const history = useHistory(); 
 
     let text;
     if (condo) {
-        text = "Condo for sale"
+        text = "Condo"
     } else {
-        text = "House for sale"
+        text = "House"
     }
     let pictures;
     if (photosUrl && Array.isArray(photosUrl)) {
@@ -32,7 +32,7 @@ function UserListingItem({listing}) {
                                 {bedrooms} bds |&nbsp;
                                 {bathrooms} ba |&nbsp;
                                 {sqft.toLocaleString('en-US')} sqft |&nbsp;
-                                {text}
+                                {text} for {listingType}
                             </div>
                             <div className="cardAddress">
                                 {address}
