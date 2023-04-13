@@ -5,14 +5,18 @@ import { useEffect } from "react";
 
 
 function FavButton({listing, sessionUser, favorites}) {
-    const listingId = String(listing.id)
-    const userId = sessionUser.id
-    const dispatch = useDispatch();
     // const favorites = useSelector(getFavorites)
 
     // useEffect(() => {
     //     dispatch(fetchFavorites())
     // }, [dispatch, sessionUser])
+    const dispatch = useDispatch();
+    const listingId = String(listing.id)
+    let userId;
+    if (sessionUser) {
+        userId = sessionUser.id
+    };
+    
     let favoriteId;
     if (Object.keys(favorites).includes(String(listing.id))) {
         favoriteId = favorites[String(listingId)].id
