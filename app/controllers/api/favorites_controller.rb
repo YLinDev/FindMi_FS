@@ -11,11 +11,7 @@ class Api::FavoritesController < ApplicationController
 
     def create 
         @favorite = Favorite.new(favorite_params)
-        if @favorite.save! 
-            render :show 
-        else
-            render json: { errors: @favorite.errors.full_messages }, status: 422
-        end
+        @favorite.save! 
     end
 
     def destroy 

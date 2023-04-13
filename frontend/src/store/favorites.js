@@ -44,16 +44,15 @@ export const fetchFavorite = (favoriteId) => async (dispatch) => {
     };
 };
 
-export const setupFav = (favorite) => async (dispatch) => {
+export const setupFav = (formData) => async (dispatch) => {
     const res = await csrfFetch('/api/favorites', {
         method: 'POST',
-        body: JSON.stringify(favorite)
+        body: formData
     })
-    if (res.ok) {
-        const data = await res.json();
-        dispatch(receiveFavorite(data))
-        return data.id;
-    }
+    // if (res.ok) {
+    //     const data = await res.json();
+    //     dispatch(receiveFavorite(data.favorite))
+    // }
 }
 
 export const deleteFav = (favoriteId) => async (dispatch) => {
