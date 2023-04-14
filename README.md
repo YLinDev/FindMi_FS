@@ -4,7 +4,7 @@ Check out the [Live Site](https://findmi.onrender.com) here!
 
 ## Introduction
 
-  FindMi is a clone of the Zillow website. Zillow is a homes listing website for users to post houses/apartments for sale/rent. A Zillow user can browse and search listings on the site without creating a user profile; however, a profile would is required for the user to post their own properties for sale or rent on Zillow. Zillow also provides a interactive map using Google Map API and the ability to save/favorite listings so you can come back and review listings that you are interested in. The technologies used to create FindMi include:
+  FindMi is a clone of the Zillow website. Zillow is a homes listing website for users to post houses/apartments for sale/rent. A Zillow user can browse and search listings on the site without creating a user profile; however, an account is required for the user to post their own properties for sale or rent on Zillow. Zillow also provides a interactive map using Google Map API and the ability to save/favorite listings so you can come back and review listings that you are interested in. The technologies used to create FindMi include:
 
 * Languages: Javascript, Ruby, HTML, and CSS
 * Asset Storage: AWS Simple Cloud Storage
@@ -15,7 +15,7 @@ Check out the [Live Site](https://findmi.onrender.com) here!
 
 # MVPs 
 
-## User Profiles 
+## User Account
 
 A FindMi user can create account using an email and password.  The user account created will persist in the backend and the user can re-use the account during re-login:
 
