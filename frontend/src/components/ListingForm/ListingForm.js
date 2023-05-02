@@ -52,10 +52,10 @@ function ListingForm({onClose}) {
     const [air_cond, setAirCond] = useState("");
     const [bathrooms, setBathrooms] = useState("");
     const [bedrooms, setBedrooms] = useState("");
-    const [owner_id, setOwnerId] = useState(1)
-    const [condo, setCondo] = useState(false);
+    const [owner_id, setOwnerId] = useState(sessionUser.id)
+    const [condo, setCondo] = useState("");
     const [description, setDescription] = useState("");
-    const [listing_type, setListingType] = useState("sale");
+    const [listing_type, setListingType] = useState("");
     const [monthly_hoa_fee, setMonthlyHoaFee] = useState(0);
     const [overview, setOverview] = useState("");
     const [parking, setParking] = useState("");
@@ -71,7 +71,6 @@ function ListingForm({onClose}) {
 
     useEffect(() => {
         if (listingId) {
-            dispatch(fetchListing(listingId));
             setAddress(listing.address);
             setAirCond(listing.airCond);
             setBathrooms(listing.bathrooms);
@@ -112,27 +111,27 @@ function ListingForm({onClose}) {
 			}
 		} 
         
-        formData.append('listing[price]', price);
-        formData.append('listing[bedrooms]', bedrooms);
-        formData.append('listing[bathrooms]', bathrooms);
-        formData.append('listing[sqft]', sqft)
-        formData.append('listing[address]', address);
-        formData.append('listing[listing_type]', listing_type);
-        formData.append('listing[year_built]', year_built);
-        formData.append('listing[description]', description);
-        formData.append('listing[condo]', condo);
-        formData.append('listing[air_cond]', air_cond);
-        formData.append('listing[parking]', parking);
-        formData.append('listing[monthly_hoa_fee]', monthly_hoa_fee);
-        formData.append('listing[price_per_sqft]', price_per_sqft);
-        formData.append('listing[overview]', overview);
-        formData.append('listing[views]', views);
-        formData.append('listing[saves]', saves);
-        formData.append('listing[owner_id]', owner_id)
+        formData.set('listing[price]', price);
+        formData.set('listing[bedrooms]', bedrooms);
+        formData.set('listing[bathrooms]', bathrooms);
+        formData.set('listing[sqft]', sqft)
+        formData.set('listing[address]', address);
+        formData.set('listing[listingType]', listing_type);
+        formData.set('listing[year_built]', year_built);
+        formData.set('listing[description]', description);
+        formData.set('listing[condo]', condo);
+        formData.set('listing[air_cond]', air_cond);
+        formData.set('listing[parking]', parking);
+        formData.set('listing[monthly_hoa_fee]', monthly_hoa_fee);
+        formData.set('listing[price_per_sqft]', price_per_sqft);
+        formData.set('listing[overview]', overview);
+        formData.set('listing[views]', views);
+        formData.set('listing[saves]', saves);
+        formData.set('listing[owner_id]', owner_id)
 
-        // for (const pair of formData.entries()) {
-        //     console.log(`${pair[0]}, ${pair[1]}`)
-        // }
+        for (const pair of formData.entries()) {
+            console.log(`${pair[0]}, ${pair[1]}`)
+        }
 
         if (listingId) {
 			dispatch(updateListing(formData, listingId));
@@ -146,7 +145,34 @@ function ListingForm({onClose}) {
         
     }
 
+    let saleRadio = ""
+    let rentRadio = ""
+    if (listing_type === "sale") {
+        saleRadio = "checked"
+    } else if (listing_type === "rent") {
+        rentRadio = "checked"
+    }
 
+    let condoRadio = ""
+    let houseRadio = ""
+    if (condo === 'false' || condo === false) {
+        condoRadio = ""
+        houseRadio = "checked"
+    } else if (condo === 'true' || condo === true){
+        houseRadio = ""
+        condoRadio = "checked"
+    }
+
+    // const handleCondo = (e) => {
+    //     if (e.target.value) {
+    //         houseRadio = ""
+    //         condoRadio = "checked"
+    //     } else {
+    //         condoRadio = ""
+    //         houseRadio = "checked"
+    //     }
+    //     setCondo(e.target.value)
+    // }
 
     return(
         <>
@@ -156,13 +182,13 @@ function ListingForm({onClose}) {
                     Listing for:
                     <label className='LFlabel'>
                         Sale
-                        <input type='radio' name="listingFor" value="sale"
+                        <input type='radio' name="listingFor" value="sale" checked={saleRadio}
                             onChange={(e) => setListingType(e.target.value)}
                         />
                     </label>
                     <label className='LFlabel'>
                         Rent
-                        <input type='radio' name="listingFor" value="rent"
+                        <input type='radio' name="listingFor" value="rent" checked={rentRadio}
                             onChange={(e) => setListingType(e.target.value)}
                         />
                     </label>
@@ -222,13 +248,13 @@ function ListingForm({onClose}) {
                     Building Type
                     <label className='LFlabel'>
                         Condo
-                        <input type='radio' name="condo" value='true' 
+                        <input type='radio' name="condo" value='true' checked={condoRadio}
                             onChange={(e) => setCondo(e.target.value)}
                         />
                     </label>
                     <label className='LFlabel'>
                         House
-                        <input type='radio' name='condo' value='false'
+                        <input type='radio' name='condo' value='false' checked={houseRadio}
                             onChange={(e) => setCondo(e.target.value)}
                         />
                     </label>

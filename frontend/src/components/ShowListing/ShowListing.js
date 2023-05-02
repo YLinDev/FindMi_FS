@@ -40,7 +40,7 @@ function ShowListing() {
 
         let pictures
         if (photosUrl && Array.isArray(photosUrl)) {
-            pictures = photosUrl.map((url) => <img src={url} alt=""/>)
+            pictures = photosUrl.map((url) => <img src={url} alt="" key={url}/>)
         } else {
             pictures = <img src={require('././assets/stock-image.jpeg')} alt=""/>
         }

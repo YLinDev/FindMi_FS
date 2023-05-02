@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Navigation />
+      <Navigation path="/"/>
         <Switch>
           <Route exact path="/">
             <SearchBar />
