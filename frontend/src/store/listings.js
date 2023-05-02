@@ -64,6 +64,7 @@ export const updateListing = (formData, listingId) => async (dispatch) => {
     if (res.ok) {
         const data = await res.json();
         dispatch(receiveListing(data.listing))
+        return data.listing.id;
     };
 };
 
@@ -73,6 +74,24 @@ export const deleteListing = (listingId) => async (dispatch) => {
     })
     dispatch(removeListing(listingId))
 }
+
+// export const setupFav = (formData, listing) => async (dispatch) => {
+//     const res = await csrfFetch('/api/favorites', {
+//         method: 'POST',
+//         body: formData
+//     })
+//     if (res.ok) {
+//         const data = await res.json();
+//         dispatch(receiveListing(listing))
+//     }
+// }
+
+// export const deleteFav = (favoriteId, listing) => async (dispatch) => {
+//     const res = await csrfFetch(`/api/favorites/${favoriteId}`, {
+//         method: 'DELETE'
+//     })
+//     dispatch(receiveListing(listing))
+// }
 
 function listingsReducer(state = {}, action) {
     switch(action.type) {

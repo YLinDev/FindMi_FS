@@ -28,6 +28,7 @@ json.listing do
         else
             json.photos_url '././assets/stock-image.jpeg'
         end 
+        json.saver_id @listing.favorites.map { |saver| saver.saver_id }
 end
     
     # if @listing.photos.attached?

@@ -139,9 +139,9 @@ function ListingForm({onClose}) {
             document.getElementById('sellModal-background').click()
             return history.push(`/show/${listingId}`);
 		} else {
-            dispatch(createListing(formData));
+            const listingId = await dispatch(createListing(formData));
             document.getElementById('sellModal-background').click()
-            return history.push("/");
+            return history.push(`/show/${listingId}`);
 		}
         
     }
@@ -259,7 +259,7 @@ function ListingForm({onClose}) {
                 </label>
                 <label className='LFlabel'>
                     Pictures
-                    <input type='file' onChange={handleFiles} multiple required/>
+                    <input type='file' onChange={handleFiles} multiple />
                 </label>
                 <label className='LFlabel'>
                     Description

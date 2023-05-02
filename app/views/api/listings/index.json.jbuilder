@@ -42,3 +42,11 @@ json.listings do
     end
 end
 
+# saver objects 
+#
+# if listing.favorites
+#     json.saver_id listing.favorites.map { |saver| {saver.id => saver.saver_id} }
+# else
+#     json.saver_id []
+# end
+

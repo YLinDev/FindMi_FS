@@ -59,7 +59,7 @@ class Listing < ApplicationRecord
             return address[0...start_index] + address[end_index..-1]
         end
         if address.include? "UNIT"
-            start_index = address.index("#")
+            start_index = address.index("UNIT")
             end_index = address.index(",")
             return address[0...start_index] + address[end_index..-1]
         end

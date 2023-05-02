@@ -10,7 +10,7 @@ function FirstCollection() {
     const listings = useSelector(getListings)
     const sessionUser = useSelector(state => state.session.user)
     const favorites = useSelector(getFavorites)
-
+ 
     useEffect(() => {
         if (sessionUser){
             dispatch(fetchFavorites())
