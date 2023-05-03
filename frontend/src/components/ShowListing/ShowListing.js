@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import { getListing } from "../../store/listings";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchListing } from "../../store/listings";
@@ -10,6 +10,7 @@ import './ShowListing.css';
 
 function ShowListing() {
     const dispatch = useDispatch(); 
+    const history = useHistory(); 
     const { listingId } = useParams();
     const sessionUser = useSelector(state => state.session.user)
 
@@ -49,6 +50,10 @@ function ShowListing() {
             monthly = "No HOA"
         } else {
             monthly = `$${monthlyHoaFee} / month HOA`
+        }
+
+        const handleClose = () => {
+            history.goBack(); 
         }
 
         return (
@@ -121,6 +126,9 @@ function ShowListing() {
                                 {deleteButton}
                             </div>
                         </div>
+                    </div>
+                    <div className="show-close-div">
+                        <button className="show-close" onClick={handleClose}><i className="fa-solid fa-xmark fa-beat"></i></button>
                     </div>
                 </div>
             </>

@@ -18,7 +18,7 @@ function UserListingItem({listing}) {
 
     return (
             <li className="YC_cardDiv" 
-                onClick={() => history.replace(`/show/${id}`)}
+                onClick={() => history.push(`/show/${id}`)}
             >
                     <div className="card"> 
                         <div className="cardTop">
