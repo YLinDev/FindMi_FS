@@ -19,7 +19,7 @@ function UserListings() {
         dispatch(fetchListings())
     }, [dispatch])
 
-    if (userList) {
+    if (listings) {
         return (
             <div>
                 <h1 className="YC_header">Here are All of your Listings</h1>

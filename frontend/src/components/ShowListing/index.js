@@ -1,14 +1,18 @@
 import React from 'react';
 import { ShowModal } from '../../context/SignInModal/Modal';
 import ShowListing from './ShowListing';
+import { useEffect } from 'react';
 
-export function ShowMiModal({ onClose, onSuccess, listing }) {
+export function ShowMiModal() {
+
+    useEffect(() => {
+      window.scrollTo(0,0);
+    }, [])
+
     return (
-      <ShowModal onClose={onClose}>
-        <div className="SLmodal">
-          <ShowListing listing={listing} onSuccess={onSuccess} onClose={onClose}/>
-        </div>
-      </ShowModal>
+
+      <ShowListing />
+
     );
   }
 

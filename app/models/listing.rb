@@ -63,7 +63,7 @@ class Listing < ApplicationRecord
             end_index = address.index(",")
             return address[0...start_index] + address[end_index..-1]
         end
-        address
+        return address
     end
 
 end
