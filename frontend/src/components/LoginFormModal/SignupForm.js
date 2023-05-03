@@ -14,6 +14,13 @@ function SignupFormPage() {
 
     // if (sessionUser) return <Redirect to="/" />;
 
+    let showErrors = (<div></div>)
+    if (errors[0]) {
+        showErrors = (<ul className='errors' style={{border: "solid", borderRadius: "5px"}}>
+                        {errors.map(error =><li key={error}>{error}</li>)}
+                        </ul>)
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if (password === confirmPassword) {
@@ -71,9 +78,7 @@ function SignupFormPage() {
                     />
             </label>
             <button className="sFormButton" type="submit">Sign Up</button>
-            <ul className='errors'>
-                {errors.map(error => <li key={error}>{error}</li>)}
-            </ul>
+            {showErrors}
         </form>
     )
 }

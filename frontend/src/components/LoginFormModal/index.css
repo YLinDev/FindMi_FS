@@ -30,11 +30,10 @@
 }
 
 .errors {
-    font-size: 13px;
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
-    height: 20px; 
-    width: 300px;
+    width: 294px;
     color: red; 
     text-align: center;
 }

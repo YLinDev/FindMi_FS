@@ -10,7 +10,8 @@ function LoginForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState([]);
-    const [emailBorder, setEmailBorder] = useState({boxShadow: 'none'})
+    const [emailErrors, setEmailErrors] = useState("")
+    // const [emailBorder, setEmailBorder] = useState({boxShadow: 'none'})
 
     // if (sessionUser) return <Redirect to="/" />; 
 
@@ -18,6 +19,13 @@ function LoginForm() {
         setEmail('demo@user.io');
         setPassword('password')
     }
+
+    let showErrors = (<div></div>)
+    if (errors[0]) {
+        showErrors = (<ul className='errors' style={{border: "solid", borderRadius: "5px"}}>
+                        {errors.map(error =><li key={error}>{error}</li>)}
+                        </ul>)
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -42,6 +50,7 @@ function LoginForm() {
         <>
             <form className="loginForm"onSubmit={handleSubmit}>
                 <label className='lFormLabel'>
+                    <p>{emailErrors}</p>
                     Email
                     <br/>
                     <input
@@ -65,9 +74,7 @@ function LoginForm() {
                 </label>
                 <button className="lFormButton" type="submit">Sign In</button>
                 <input className="lFormButton" type="submit" onClick={demoUser} value="Demo User"/>
-                <ul className='errors'>
-                    {errors.map(error =><li key={error}>{error}</li>)}
-                </ul>
+                {showErrors}
             </form>
         </>
     );
