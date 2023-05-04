@@ -34,7 +34,9 @@ function ProfileButton({ user }) {
     return (
         <>
             <button style={{ color: "gray", fontSize: "20px", width: "58px" }} onClick={openMenu}>
-                <i className="fa-solid fa-user"></i>
+                <div className="profile-div">
+                    <i className="fa-solid fa-user"></i>
+                </div>
             </button>
             {showMenu && (
                 <section className="profile-dropdown">

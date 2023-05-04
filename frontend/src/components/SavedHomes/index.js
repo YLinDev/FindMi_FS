@@ -21,7 +21,7 @@ function SavedHomes() {
         dispatch(fetchListings())
     }, [dispatch])
 
-    if (userList) {
+    if (listings && userList) {
         return (
             <div>
                 <h1 className="YC_header">Saved Homes</h1>

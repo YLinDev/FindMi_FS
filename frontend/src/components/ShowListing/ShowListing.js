@@ -7,18 +7,66 @@ import { useEffect } from "react";
 import EditButton from "./editButton";
 import DeleteButton from "./deleteButton";
 import './ShowListing.css';
+import { fetchFavorites, getFavorites} from "../../store/favorites";
+import FavButton from "../FavButton";
+import { setupFav, deleteFav } from "../../store/favorites";
+import { fetchUser } from "../../store/session";
+import { fetchFavorite } from "../../store/favorites";
+
 
 function ShowListing() {
     const dispatch = useDispatch(); 
     const history = useHistory(); 
     const { listingId } = useParams();
     const sessionUser = useSelector(state => state.session.user)
+    const favorites = useSelector(getFavorites)
+
+    // console.log(sessionUser.favorites.key)
+
+    const handleCreateFav = async (e) => {
+        e.preventDefault(); 
+        e.stopPropagation();
+        const formData = new FormData();
+        formData.append("favorite[saverId]", sessionUser.id)
+        formData.append("favorite[listingId]", listingId)
+        return dispatch(setupFav(formData, listing))
+    }
+
+    const handleDeleteFav = (e) => {
+        e.preventDefault(); 
+        e.stopPropagation();
+        dispatch(deleteFav(favoriteId, listingId))
+    }
+
+    let saveButton = (
+        <button id="save-button" className="listing-buttons" onClick={handleCreateFav}>
+            <i className="fa-regular fa-heart"></i> &nbsp;Save
+        </button>
+    )
+
+    if (sessionUser) {
+        if (Object.keys(favorites).includes(String(listingId))){
+            saveButton = (
+                <button id="save-button" className="listing-buttons" onClick={handleDeleteFav}>
+                    <i className="fa-solid fa-heart"></i> &nbsp;Saved
+                </button>
+            )
+        }
+    }
+    const listing = useSelector(getListing(parseInt(listingId)))
+    
+    let favoriteId;
+    if (Object.keys(favorites).includes(String(listingId))) {
+        favoriteId = favorites[String(listingId)].id
+    } 
 
     useEffect(() => {
+        if (sessionUser) {
+            dispatch(fetchFavorites)
+        }
         dispatch(fetchListing(listingId))
     }, [dispatch, listingId])
     
-    const listing = useSelector(getListing(parseInt(listingId)))
     if (listing) {
         const { ownerId, price, condo, bedrooms, bathrooms, sqft, address, parking, airCond, yearBuilt, overview, description, photosUrl, monthlyHoaFee, listingType } = listing
         
@@ -66,18 +114,16 @@ function ShowListing() {
                         <div className="infoHeader">
                             <img className="logo"src={require('././assets/findMiLogo.png')} alt=""/>
                             <div className="showButtons">
-                                <button>
-                                    <i className="fa-regular fa-heart"></i> &nbsp;Save
-                                </button>
-                                <button>
+                                {saveButton}
+                                <a className="listing-buttons">
                                     <i className="fa-solid fa-share"></i> &nbsp;Share
-                                </button>
-                                <button>
+                                </a>
+                                <a className="listing-buttons">
                                     <i className="fa-regular fa-eye-slash"></i> &nbsp;Hide
-                                </button>
-                                <button>
+                                </a>
+                                <a className="listing-buttons">
                                     <i className="fa-solid fa-caret-down"></i> &nbsp;More
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div className="showPriceInfo">
@@ -101,11 +147,11 @@ function ShowListing() {
                             <p>FindMiMate : None</p>
                         </div>
                         <div className="showTourAgent">
-                            <button className="tourButton">
+                            <a className="tourButton">
                                 Request a Tour
                                 <p>as early as tomorrow at 11:00am</p>
-                            </button>
-                            <button className="agentButton">Contact an agent</button>
+                            </a>
+                            <a className="agentButton">Contact an agent</a>
                         </div>
                         <div className="showScroll">
                             <div className="sOverviewDiv">

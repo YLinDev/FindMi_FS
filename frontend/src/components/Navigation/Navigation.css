@@ -89,3 +89,12 @@ a {
     align-items: center;
     gap: 8px; 
 }
+
+.profile-div{
+    width: 80%; 
+    border-radius: 5px;
+}
+
+.profile-div:hover {
+    color: blue; 
+}

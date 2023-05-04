@@ -51,7 +51,7 @@ export const setupFav = (formData) => async (dispatch) => {
     })
     if (res.ok) {
         const data = await res.json();
-        dispatch(receiveFavorites())
+        return dispatch(receiveFavorites())
     }
 }
 

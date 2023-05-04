@@ -38,6 +38,15 @@ export const logoutUser = (userId) => async (dispatch) => {
     return dispatch(logoutUserAction());
 };
 
+export const fetchUser = (userId) => async (dispatch) => {
+    const res = await csrfFetch(`/api/users/${userId}`)
+    if (res.ok) {
+        const data = await res.json(); 
+        storeCurrentUser(data.user);
+        dispatch(loginUserAction(data.user))
+    };
+};
+
 //helper function to set user to sessionStorage
 const storeCurrentUser = user => {
     if (user) sessionStorage.setItem('currentUser', JSON.stringify(user));
