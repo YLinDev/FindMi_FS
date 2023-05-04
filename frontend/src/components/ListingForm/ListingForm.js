@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getListing, fetchListing } from '../../store/listings';
 import { useEffect } from 'react';
 import './ListingForm.css'
+import states from "../data/States";
 
 
 function ListingForm({onClose}) {
@@ -65,13 +66,22 @@ function ListingForm({onClose}) {
     const [price_per_sqft, setPricePerSquare] = useState(0);
     const [views, setViews] = useState(0);
     const [saves, setSaves] = useState(0);
+    const [streetAddress, setStreetAddress] = useState("");
+    const [city, setCity] = useState("");
+    const [state, setState] = useState("");
+    const [zipcode, setZipcode] = useState("")
     const [createdAt, setCreatedAt] = useState('');
     const [updatedAt, setUpdatedAt] = useState('');
     //const [errors, setErrors] = useState([]);
 
     useEffect(() => {
         if (listingId) {
-            setAddress(listing.address);
+            // setAddress(listing.address);
+            let listingAddress = listing.address.split(", ");
+            setStreetAddress(listingAddress[0]);
+            setCity(listingAddress[1]);
+            setState(listingAddress[2].split(" ")[0])
+            setZipcode(listingAddress[2].split(" ")[1])
             setAirCond(listing.airCond);
             setBathrooms(listing.bathrooms);
             setBedrooms(listing.bedrooms);
@@ -115,7 +125,7 @@ function ListingForm({onClose}) {
         formData.set('listing[bedrooms]', bedrooms);
         formData.set('listing[bathrooms]', bathrooms);
         formData.set('listing[sqft]', sqft)
-        formData.set('listing[address]', address);
+        formData.set('listing[address]', `${streetAddress}, ${city}, ${state} ${zipcode}`);
         formData.set('listing[listingType]', listing_type);
         formData.set('listing[year_built]', year_built);
         formData.set('listing[description]', description);
@@ -174,27 +184,36 @@ function ListingForm({onClose}) {
     //     setCondo(e.target.value)
     // }
 
+    let stateForLabel = "select your state"
+    let stateForValue = "default"
+    if (state !== "") {
+        stateForLabel = state
+        stateForValue = state
+    }
+
     return(
         <>
             {formHeading}
             <form className="listingForm" onSubmit={handleSubmit}>
-                <label id="LFradio" className='LFlabel'>
+                <label className='LFlabel'>
                     Listing for:
-                    <label className='LFlabel'>
-                        Sale
-                        <input type='radio' name="listingFor" value="sale" checked={saleRadio}
-                            onChange={(e) => setListingType(e.target.value)}
-                        />
-                    </label>
-                    <label className='LFlabel'>
-                        Rent
-                        <input type='radio' name="listingFor" value="rent" checked={rentRadio}
-                            onChange={(e) => setListingType(e.target.value)}
-                        />
-                    </label>
+                    <div className="LFradio-div">
+                        <label className='LFradio'>
+                            Sale
+                            <input type='radio' name="listingFor" value="sale" checked={saleRadio}
+                                onChange={(e) => setListingType(e.target.value)}
+                            />
+                        </label>
+                        <label className='LFradio'>
+                            Rent
+                            <input type='radio' name="listingFor" value="rent" checked={rentRadio}
+                                onChange={(e) => setListingType(e.target.value)}
+                            />
+                        </label>
+                    </div>
                 </label>
                 <label className='LFlabel'>
-                    Bedrooms 
+                    Number of Bedrooms
                     <input className='LFInput' type='number' min='0'
                         value = {bedrooms}
                         onChange={(e) => setBedrooms(e.target.value)}
@@ -202,20 +221,47 @@ function ListingForm({onClose}) {
                     />
                 </label>
                 <label className='LFlabel'>
-                    Bathrooms
+                    Number of Bathrooms
                     <input className='LFInput' type='number' min='0'
                         value = {bathrooms}
                         onChange={(e) => setBathrooms(e.target.value)}
                         required
                     />
                 </label>
-                <label className='LFlabel'>
-                    Address
-                    <input className='LFInput' type='text'
-                        value = {address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        required
-                    />
+                <label className="LFlabel">
+                    Street Address
+                    <input className="LFInput"
+                        type="text"
+                        value={streetAddress}
+                        onChange={(e) => setStreetAddress(e.target.value)}
+                    /> 
+                </label>
+                <label className="LFlabel">
+                    City
+                    <input className="LFInput"
+                        type="text"
+                        value={city}
+                        onChange={(e) => setCity(e.target.value)}
+                    /> 
+                </label>
+                <label className="LFlabel">
+                    State
+                    <div className="LFradio-div">
+                        <select className="form-dropdown states-dropdown" defaultValue={"default"} onChange={(e) => setState(e.target.value)}>
+                            <option disabled value={stateForValue}>{stateForLabel}</option>
+                            {states.map((st) => (
+                                <option key={st} value={st}>{st}</option>
+                            ))}
+                        </select>
+                    </div>
+                    </label>
+                <label className="LFlabel">
+                    Zip Code
+                    <input className="LFInput"
+                        type="text"
+                        value={zipcode}
+                        onChange={(e) => setZipcode(e.target.value)}
+                    /> 
                 </label>
                 <label className='LFlabel'>
                     Price
@@ -244,20 +290,22 @@ function ListingForm({onClose}) {
                         required
                     />
                 </label>
-                <label id="LFradio" className='LFlabel'>
+                <label className='LFlabel'>
                     Building Type
-                    <label className='LFlabel'>
-                        Condo
-                        <input type='radio' name="condo" value='true' checked={condoRadio}
-                            onChange={(e) => setCondo(e.target.value)}
-                        />
-                    </label>
-                    <label className='LFlabel'>
-                        House
-                        <input type='radio' name='condo' value='false' checked={houseRadio}
-                            onChange={(e) => setCondo(e.target.value)}
-                        />
-                    </label>
+                    <div className="LFradio-div">
+                        <label className="LFradio">
+                            Condo
+                            <input type='radio' name="condo" value='true' checked={condoRadio}
+                                onChange={(e) => setCondo(e.target.value)}
+                            />
+                        </label>
+                        <label className="LFradio">
+                            House
+                            <input type='radio' name='condo' value='false' checked={houseRadio}
+                                onChange={(e) => setCondo(e.target.value)}
+                            />
+                        </label>
+                    </div>
                 </label>
                 <label className='LFlabel'>
                     Type of Air Condition
@@ -268,7 +316,7 @@ function ListingForm({onClose}) {
                     />
                 </label>
                 <label className='LFlabel'>
-                    Homeowners Association Fees
+                    HOA Fees
                     <input className='LFInput' type='number' min='0'
                         value={monthly_hoa_fee}
                         onChange={(e) => setMonthlyHoaFee(e.target.value)}
@@ -289,7 +337,7 @@ function ListingForm({onClose}) {
                 </label>
                 <label className='LFlabel'>
                     Description
-                    <input className='LFInput' type='textarea'
+                    <textarea className='LFTextArea' 
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         required
@@ -297,7 +345,7 @@ function ListingForm({onClose}) {
                 </label>
                 <label className='LFlabel'>
                     Overview
-                    <input className='LFInput' type='textarea'
+                    <textarea className='LFTextArea' 
                         value={overview}
                         onChange={(e) => setOverview(e.target.value)}
                         required

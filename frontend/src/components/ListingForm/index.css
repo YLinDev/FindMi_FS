@@ -1,0 +1,7 @@
+.listing-form-modal {
+    display: flex;
+    width: 90%; 
+    height: 550px;
+    gap: 10px; 
+    flex-direction: column;
+}

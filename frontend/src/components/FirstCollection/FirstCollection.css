@@ -2,7 +2,7 @@
     margin: 0px 64px;
     padding: 16px 0px;
     position: relative;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .header {
@@ -16,6 +16,14 @@
     font-size: 15px;
 }
 
+.arrowButton {
+    border-radius: 100%;
+}
+
+.arrowButton:hover {
+    background-color: rgb(246, 246, 250);
+}
+
 #scrollCollection {
     list-style: none;
     margin: 0px;
@@ -27,6 +35,7 @@
     scroll-behavior: smooth;
     display: flex; 
     gap: 16px; 
+    height: 100%;
 }
 
 #scrollCollection::-webkit-scrollbar {display: none;}
@@ -37,10 +46,11 @@
     flex-direction: column;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px 0px;
+    margin: 10px; 
 }
 
 .card:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 5px 0px;
 }
 
 .cardDiv {

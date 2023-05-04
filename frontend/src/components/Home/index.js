@@ -15,12 +15,16 @@ function Home() {
         dispatch(fetchListings())
     }, [])
 
-    return(
-        <div className='homePage'>
-            <ListingMapp listings={listings}/>
-            <HomeCollection listings={listings}/>
-        </div>
-    )
+    if (listings) {
+        return(
+            <div className='homePage'>
+                <ListingMapp listings={listings}/>
+                <HomeCollection listings={listings}/>
+            </div>
+        )
+    } else {
+        return null; 
+    }
 }
 
 export default Home; 

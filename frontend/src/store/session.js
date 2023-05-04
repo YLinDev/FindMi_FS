@@ -35,8 +35,7 @@ export const logoutUser = (userId) => async (dispatch) => {
         method: 'DELETE',
     })
     storeCurrentUser(null);
-    dispatch(logoutUserAction());
-    return res; 
+    return dispatch(logoutUserAction());
 };
 
 //helper function to set user to sessionStorage

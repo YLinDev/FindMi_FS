@@ -20,7 +20,7 @@ function ListingMapp() {
 
     const Marker = ({ listing }) => {
         let showPrice; 
-        if (listing.price > 1000000) {
+        if (listing.price > 999999) {
             showPrice = `${(listing.price/1000000).toFixed(2)}M`
         } else {
             showPrice = `${(listing.price/1000).toFixed(0)}K`

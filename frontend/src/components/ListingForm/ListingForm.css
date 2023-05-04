@@ -7,7 +7,9 @@ input::-webkit-inner-spin-button {
 .listingForm {
     display: flex;
     flex-direction: column;
-    gap: 2px; 
+    gap: 5px; 
+    height: 90%; 
+    overflow-y:auto;
 }
 
 .LFlabel {
@@ -23,19 +25,68 @@ input::-webkit-inner-spin-button {
     padding-left: 5px;
 }
 
-#LFradio {
-  display: flex; 
+.LFradio-div {
+  width: 60%;
+  height: 20px;
+  font-size: 17px;
+  font-family: "Open Sans", "Adjusted Arial", Tahoma, Geneva, sans-serif;
+  line-height: 24px;
+  display: flex;
+  border: solid 1px rgb(209, 209, 213);
+  background-color: rgb(246, 246, 250);
+  border-radius: 4px;
   justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  padding: 9px 16px;
+}
+
+.LFradio {
+  width: 20%;
+  display: flex; 
+  justify-content: center;
+  border-radius: 4px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.LFradio:hover {
+  border: 1px solid rgb(0, 106, 255);
 }
 
 .LFInput {
-  width: 266px;
+  width: 60%;
   height: 20px;
   border-radius: 4px;
   background-color: rgb(246, 246, 250);
   border: 1px solid rgb(209, 209, 213);
   caret-color: rgb(0, 106, 255);
   padding: 9px 16px;
+  text-transform: capitalize;
+}
+
+.LFInput:hover {
+  border: 1px solid rgb(0, 106, 255);
+}
+
+.LFTextArea {
+  width: 60%;
+  height: 60px;
+  border-radius: 4px;
+  background-color: rgb(246, 246, 250);
+  border: 1px solid rgb(209, 209, 213);
+  caret-color: rgb(0, 106, 255);
+  padding: 9px 16px;
+  overflow-wrap: "break-word";
+  resize: none;
+}
+
+.LFTextArea:hover {
+  border: 1px solid rgb(0, 106, 255);
+}
+
+.LFradio-div:hover {
+  border: 1px solid rgb(0, 106, 255);
 }
 
 /* .formHeading {
@@ -47,3 +98,11 @@ input::-webkit-inner-spin-button {
   text-shadow: 2px 2px 8px black;
 
 } */
+
+.form-dropdown {
+  /* background-image: url('../../../public/assets/magellan_faviconv2.png');
+  background-size: contain; */
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 4px 4px #ccc;
+}

@@ -26,10 +26,10 @@ function FirstCollection() {
             <div className="header">
                 <h2>Trending Homes</h2>
                 <div className="arrowButtons">
-                    <button onClick={() => document.getElementById('scrollCollection').scrollLeft -= 1080}>
+                    <button className="arrowButton" onClick={() => document.getElementById('scrollCollection').scrollLeft -= 1080}>
                         <i className="fa-solid fa-arrow-left"></i>
                     </button>
-                    <button onClick={() => document.getElementById('scrollCollection').scrollLeft += 1080}>
+                    <button className="arrowButton" onClick={() => document.getElementById('scrollCollection').scrollLeft += 1080}>
                         <i className="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
