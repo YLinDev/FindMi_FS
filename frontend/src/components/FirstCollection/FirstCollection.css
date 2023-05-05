@@ -84,6 +84,7 @@
 .cardAddress {
     font-size: 14px;
     line-height: 24px;
+    text-transform: capitalize;
 }
 
 .cardTop {

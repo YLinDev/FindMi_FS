@@ -6,10 +6,24 @@ import InfoWindow from './HoverableInfo';
 import './ListingMap.css'
 
 
-function ListingMapp() {
+function ListingMapp({ listings, lat, lng }) {
     const AnyReactComponent = ({ text }) => <div>{text}</div>;
-    const listings = useSelector(state => Object.values(state.listings))
+    // const listings = useSelector(state => Object.values(state.listings))
     const [showInfo, setShowInfo] = useState(false); 
+
+    const [center, setCenter] = useState({
+        lat: lat || 40.74233116818592, 
+        lng: lng || -73.99140855323562
+    });
+    const defaultZoom = 12;
+
+    useEffect(()=>{
+        let newCenter = {
+            lat: lat || 40.74233116818592,
+            lng: lng || -73.99140855323562
+        }
+        setCenter(newCenter)
+    }, [lat, lng])
 
     // const dispatch = useDispatch(); 
     // const listings = useSelector(getListings)
@@ -51,20 +65,20 @@ function ListingMapp() {
     };
       
 
-    const defaultProps = {
-        center: {
-          lat: 40.727376578269435,
-          lng: -73.99823209275158
-        },
-        zoom: 13
-    };
+    // const defaultProps = {
+    //     center: {
+    //       lat: 40.727376578269435,
+    //       lng: -73.99823209275158
+    //     },
+    //     zoom: 13
+    // };
 
     return(
         <div className="pins" style={{ height: '80vh', width: '100%' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{ key: process.env.REACT_APP_MAPS_API_KEY }}
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
+                center={center}
+                defaultZoom={defaultZoom}
             >
                 {listings.map((listing) => (
                     <Marker

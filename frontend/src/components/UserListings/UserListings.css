@@ -31,3 +31,18 @@
 .cardInfo {
     text-transform: capitalize;
 }
+
+.filter-dropdown {
+    position: absolute;
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 4px 4px #ccc;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/* .user-list {
+    display: flex; 
+} */

@@ -44,6 +44,14 @@ export const fetchListing = (listingId) => async (dispatch) => {
     };
 };
 
+export const searchListing = (params) => async (dispatch) => {
+    const res = await csrfFetch(`/api/listings/search/${params}`)
+    if (res.ok) {
+        const data = await res.json();
+        return dispatch(receiveListings(data.listings))
+    };
+};
+
 export const createListing = (formData) => async (dispatch) => {
     const res = await csrfFetch('/api/listings', {
         method: 'POST',

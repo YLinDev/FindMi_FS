@@ -139,9 +139,9 @@ function ListingForm({onClose}) {
         formData.set('listing[saves]', saves);
         formData.set('listing[owner_id]', owner_id)
 
-        for (const pair of formData.entries()) {
-            console.log(`${pair[0]}, ${pair[1]}`)
-        }
+        // for (const pair of formData.entries()) {
+        //     console.log(`${pair[0]}, ${pair[1]}`)
+        // }
 
         if (listingId) {
 			dispatch(updateListing(formData, listingId));

@@ -39,7 +39,7 @@ function LoginForm() {
                 catch {
                     data = await res.text(); // will hit this case if server is down
                 }
-                console.log(data.errors)
+                // console.log(data.errors)
                 if (data?.errors) setErrors(data.errors);
                 else if (data) setErrors([data]);
                 else setErrors([res.statusText]);

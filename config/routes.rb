@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     resources :users, only: :create
     resources :favorites, only: [:index, :create, :destroy]
+    get "listings/search/:query", to: "listings#search"
     resources :listings, only: [:show, :create, :destroy, :index, :update]
     resource :session, only: [:show, :create, :destroy]
   end

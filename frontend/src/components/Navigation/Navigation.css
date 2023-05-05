@@ -42,6 +42,14 @@ a {
 
 }
 
+.profile-dropdown > ul:hover {
+    background-color: rgb(246, 246, 250);
+}
+
+.profile-dropdown > button:hover {
+    background-color: rgb(246, 246, 250);
+}
+
 .profile-dropdown-bottom {
     border-bottom: solid;
     border-bottom-color: gray;

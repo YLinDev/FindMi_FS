@@ -41,6 +41,16 @@ class Api::ListingsController < ApplicationController
         render :show 
     end
 
+    def search 
+        term = params[:query]
+        if term 
+            @listings = Listing.where("lower(address) LIKE ?", "%#{term.downcase}%")
+        else 
+            @listings = Listing.all 
+        end
+        render :index
+    end
+
     private
     
     def listing_params

@@ -127,6 +127,7 @@
 .edit_delete{
     display: flex; 
     gap: 10px; 
+    justify-content: space-around;
 }
 
 .agentButton {

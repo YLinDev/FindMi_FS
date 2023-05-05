@@ -18,6 +18,7 @@
     font-size: 20px;
     display: flex; 
     border-bottom: 1px solid rgb(209, 209, 213);
+    flex-direction: column;
 }
 
 .HC_cardDiv {
@@ -25,3 +26,26 @@
 
 }
 
+.home-search {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.home-search-input {
+    margin-left: 15px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 90%; 
+    background-color: rgb(246, 246, 250);
+    padding-left: 24px;
+    height: 80%; 
+    font-size: 15px;
+}
+
+.home-search-input:hover {
+    border: 1px solid blue; 
+}
+
+.home-search-button:hover {
+    color: blue; 
+}

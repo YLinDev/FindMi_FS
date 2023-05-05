@@ -5,15 +5,17 @@ import LoginFormModal from '../LoginFormModal';
 import './Navigation.css';
 import { Link } from 'react-router-dom';
 import SellButton from './SellButton';
+import { useHistory } from 'react-router-dom';
 import RentButton from './RentButton';
 
 function Navigation() {
+  const history = useHistory(); 
   const sessionUser = useSelector(state => state.session.user);
 
-  // const buyClick = (e) => {
-  //   e.preventDefault(); 
-  //   history.push('/home')
-  // }
+  const manageClick = (e) => {
+    e.preventDefault(); 
+    history.push(`/userListing/${sessionUser.id}`)
+  }
 
   let sessionLinks;
   if (sessionUser) {
@@ -36,7 +38,7 @@ function Navigation() {
           <Link to="/home"><button className='navButtons'>Buy</button></Link>
           <SellButton />
           <RentButton />
-          <a className='navButtons'>Manage Rentals</a>
+          <button className='navButtons' onClick={manageClick}>Manage Listings</button>
         </div>
         <Link to="/" className="icon"><img  src={require('././assets/findMiLogo.png')} alt=""/></Link>
         <div className='navRight'>

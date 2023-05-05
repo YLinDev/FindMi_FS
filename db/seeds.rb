@@ -3284,7 +3284,7 @@ data = [
         bedrooms: e[:bedrooms],
         bathrooms: e[:bathrooms],
         sqft: e[:livingArea], 
-        address: "#{e[:streetAddress]}, #{e[:city]}, #{e[:state]}, #{e[:zipcode]}",
+        address: "#{e[:streetAddress]}, #{e[:city]}, #{e[:state]} #{e[:zipcode]}",
         listing_type: @list_type.sample,
         year_built: rand(2000..2023).to_s,
         description: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),

@@ -4,6 +4,7 @@ import { fetchListings} from "../../store/listings";
 import { getFavorites, fetchFavorites } from "../../store/favorites";
 import HomeListingsList from "./HomeListingsList";
 import './HomeCollection.css';
+import HomeSearch from "./HomeSearch";
 
 function HomeCollection({listings}) {
     const dispatch = useDispatch();
@@ -16,14 +17,15 @@ function HomeCollection({listings}) {
         }
     }, [dispatch, sessionUser])
 
-    useEffect(() => {
-        dispatch(fetchListings())
-    }, [dispatch])
+    // useEffect(() => {
+    //     dispatch(fetchListings())
+    // }, [dispatch])
 
     return (
         <div className="homeCollection">
             <div className="HC_header">
-                <h2>Trending Homes Nearby: </h2>
+                <HomeSearch />
+                <h2>Trending Homes: </h2>
             </div>
             <HomeListingsList 
                 listings={listings}

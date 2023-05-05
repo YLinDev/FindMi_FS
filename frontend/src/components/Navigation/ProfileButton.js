@@ -44,13 +44,7 @@ function ProfileButton({ user }) {
                         <Link to={`/savedHomes/${user.id}`}>Saved homes</Link>
                     </ul>
                     <ul>
-                        <a>Saved searches</a>
-                    </ul>
-                    <ul>
                         <Link to={`/userListing/${user.id}`}>Your listings</Link>
-                    </ul>
-                    <ul>
-                        <a>Account settings</a>
                     </ul>
                     <div className="profile-dropdown-bottom"/>
                     <button onClick={logout}>Log Out</button>
