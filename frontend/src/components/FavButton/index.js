@@ -37,11 +37,13 @@ function FavButton({listing, sessionUser, favorites}) {
     const handleCreateFav = (e) => {
         e.preventDefault(); 
         e.stopPropagation();
-        const formData = new FormData();
-        formData.append("favorite[saverId]", userId)
-        formData.append("favorite[listingId]", listing.id)
-        return dispatch(setupFav(formData, listing))
-    }
+        if (sessionUser) {
+            const formData = new FormData();
+            formData.append("favorite[saverId]", userId)
+            formData.append("favorite[listingId]", listing.id)
+            return dispatch(setupFav(formData, listing))
+        };
+    };
 
     const handleDeleteFav = (e) => {
         e.preventDefault(); 

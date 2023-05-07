@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import SellButton from './SellButton';
 import { useHistory } from 'react-router-dom';
 import RentButton from './RentButton';
+import ManageButton from './ManageButton';
 
 function Navigation() {
   const history = useHistory(); 
@@ -38,7 +39,7 @@ function Navigation() {
           <Link to="/home"><button className='navButtons'>Buy</button></Link>
           <SellButton />
           <RentButton />
-          <button className='navButtons' onClick={manageClick}>Manage Listings</button>
+          <ManageButton />
         </div>
         <Link to="/" className="icon"><img  src={require('././assets/findMiLogo.png')} alt=""/></Link>
         <div className='navRight'>
