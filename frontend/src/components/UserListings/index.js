@@ -43,7 +43,7 @@ function UserListings() {
                 <select className="filter-dropdown" onChange={(e) => setFilter(e.target.value)}>
                     <option default>All</option>
                     <option value={"rent"}>Rent</option>
-                    <option value={"sale"}>Sell</option>
+                    <option value={"sale"}>Sale</option>
                 </select>
                 <UserListingsList listings={userList}/>
             </div>
