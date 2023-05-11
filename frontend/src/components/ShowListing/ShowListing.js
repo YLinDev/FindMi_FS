@@ -104,6 +104,10 @@ function ShowListing() {
             history.goBack(); 
         }
 
+        const handleFuture = () => {
+            history.push("/future")
+        }
+
         return (
             <> 
                 <div className="showDiv">
@@ -115,15 +119,15 @@ function ShowListing() {
                             <img className="logo"src={require('././assets/findMiLogo.png')} alt=""/>
                             <div className="showButtons">
                                 {saveButton}
-                                <a className="listing-buttons">
+                                <button className="listing-buttons" onClick={handleFuture}>
                                     <i className="fa-solid fa-share"></i> &nbsp;Share
-                                </a>
-                                <a className="listing-buttons">
+                                </button>
+                                <button className="listing-buttons" onClick={handleFuture}>
                                     <i className="fa-regular fa-eye-slash"></i> &nbsp;Hide
-                                </a>
-                                <a className="listing-buttons">
+                                </button>
+                                <button className="listing-buttons" onClick={handleFuture}>
                                     <i className="fa-solid fa-caret-down"></i> &nbsp;More
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div className="showPriceInfo">
@@ -147,11 +151,11 @@ function ShowListing() {
                             <p>FindMiMate : None</p>
                         </div>
                         <div className="showTourAgent">
-                            <a className="tourButton">
+                            <button className="tourButton" title="To be implemented" onClick={handleFuture}>
                                 Request a Tour
                                 <p>as early as tomorrow at 11:00am</p>
-                            </a>
-                            <a className="agentButton">Contact an agent</a>
+                            </button>
+                            <button className="agentButton" title="To be implemented" onClick={handleFuture}>Contact an agent</button>
                         </div>
                         <div className="showScroll">
                             <div className="sOverviewDiv">

@@ -31,6 +31,10 @@ function Navigation() {
       </>
     );
   }
+  
+  const handleFuture = () => {
+    history.push("/future")
+  }
 
   return (
     <ul>
@@ -45,7 +49,7 @@ function Navigation() {
         <div className='navRight'>
           <a href="https://github.com/YLinDev/FindMi_FS" target="_blank"><img className='navButtons' id='links' src={require('././assets/github-icon2.png')} alt="GitHubLogo"/></a>
           <a href="https://www.linkedin.com/in/yong-lin-b7142a40/" target="_blank"><img className='navButtons' id='links' src={require('././assets/linkedin-icon2.png')} alt="LinkedInLogo"/></a>
-          <a className='navButtons'>Help</a>
+          <button className='navButtons' onClick={handleFuture}>Help</button>
           {sessionLinks}
         </div>
       </li>
